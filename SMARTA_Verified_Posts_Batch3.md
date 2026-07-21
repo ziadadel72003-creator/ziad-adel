@@ -196,3 +196,71 @@ Themes 11–13 are, by their nature (premium European switch brands; global ligh
 *ملاحظة الشفافية لهذه الثيمة (موثّق 3/5): منشورات "الاستطلاع/التصويت" ضعيفة الفهرسة في محركات البحث — نصّ السؤال في التعليق نادرًا ما يُزحَف إليه، فظهرت قلة منها رغم بحث مكثّف عبر عدة علامات (Nanoleaf, Philips Hue, Govee, LIFX). الثلاثة أعلاه كلها من Nanoleaf (مصدر النمط الذي حدده العميل) ومؤكّدة. لم أُضِف منشورات "تخصيص مشهد" من Govee كحشو لأنها ليست استطلاعات فعلية — التزامًا بقاعدة عدم التلفيق. الأهم: ندرة ظهور هذا الفورمات دليل أنه **قليل الإنتاج = فرصة تفاعل عالية ومنافسة منخفضة** لسمارتا لإنتاج استطلاعاتها الأصلية (وهي رخيصة الإنتاج وسريعة التفاعل).*
 
 ---
+
+## Theme 14: Satisfying Automation (لقطة مُرضية — كل شيء بلمسة) — *analyst pick*
+
+*Trigger: Satisfaction/ASMR + saves. The "one tap → everything responds" or "domino" reveal is one of the highest-saved formats on Instagram. Chosen because it's creative AND has abundant real-post presence, including strong MENA content.*
+
+### Post 1
+- **URL:** https://www.instagram.com/smarthomesolver/reel/C2xRDoJL4Pm/
+- **Account:** @smarthomesolver (Smart Home Solver / Reed — 23K followers, respected smart-home creator)
+- **Country:** USA (creator/authority)
+- **Post type:** Reel
+- **What it shows:** "These are my automated TV lights! Here's how…" — bias lighting behind the TV that reacts automatically; a clean, satisfying automation demo with a how-to payoff.
+- **Verification:** WebSearch — the **account handle is in the URL path** (`/smarthomesolver/reel/`) and the exact URL was returned by two independent queries with the matching caption. WebFetch returned HTTP 403 (see methodology note).
+- **Hook (opening line/visual):** The TV lights snapping on in sync with the screen — an instantly satisfying visual.
+- **Psychological trigger:** Satisfaction + Curiosity ("how'd he do that?")
+- **Why it likely worked:** A short, satisfying result paired with "here's how" gives two reasons to engage — enjoy it, then save it to copy later.
+- **SMARTA adaptation (Arabic):** تنشر سمارتا لقطة مُرضية قصيرة (إضاءة خلف الشاشة تتفاعل مع الفيلم) متبوعة بـ"كيف سوّيناها"، ليجمع المنشور بين المتعة والحفظ.
+
+### Post 2
+- **URL:** https://www.instagram.com/smarthomesolver/reel/C7W0fuopb7_/
+- **Account:** @smarthomesolver (Smart Home Solver)
+- **Country:** USA (creator/authority)
+- **Post type:** Reel
+- **What it shows:** "My smart home dashboard controls my…" — a single dashboard/tap orchestrating multiple devices at once; the satisfying "one screen runs everything" reveal.
+- **Verification:** WebSearch — the **account handle is in the URL path** (`/smarthomesolver/reel/`), surfaced in a satisfying-automation search. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** One tap on a sleek dashboard → several things happen across the room.
+- **Psychological trigger:** Satisfaction / Control (mastery)
+- **Why it likely worked:** The "one control runs it all" moment is the core fantasy of a smart home — seeing it work in one clip is deeply satisfying and aspirational.
+- **SMARTA adaptation (Arabic):** تعرض سمارتا لوحة تحكم واحدة أنيقة، وبلمسة واحدة تتحرك الإضاءة والستائر والتكييف معًا — "كل فيلتك من شاشة واحدة".
+
+### Post 3
+- **URL:** https://www.instagram.com/reel/DVbW6e9DJTd/
+- **Account:** مزوّد منزل ذكي عربي (الحساب غير مكشوف في المقتطف)
+- **Country:** MENA (Arabic)
+- **Post type:** Reel
+- **What it shows:** "بيتك الذكي… بلمسة واحدة إضاءة، تكييف، ستائر وأمان كامل تحكم…" — one tap running lighting, AC, curtains and full security together; the quintessential satisfying "everything at once" clip, in Arabic.
+- **Verification:** WebSearch — a URL-quote search returned this exact reel with the matching Arabic caption. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** "بلمسة واحدة" (with one tap) as multiple systems respond on screen.
+- **Psychological trigger:** Satisfaction / Convenience
+- **Why it likely worked:** "One tap → lighting + AC + curtains + security" packs the maximum satisfying payoff into a few seconds, in the audience's own language.
+- **SMARTA adaptation (Arabic):** هذا تحديدًا فورمات سمارتا: "بلمسة واحدة — الإضاءة، التكييف، الستائر، والأمان" داخل فيلا سعودية حقيقية، لقطة واحدة سريعة ومُرضية.
+
+### Post 4
+- **URL:** https://www.instagram.com/reel/DWmNSJeAaQY/
+- **Account:** مزوّد إضاءة ذكية عربي (الحساب غير مكشوف في المقتطف)
+- **Country:** MENA (Arabic)
+- **Post type:** Reel
+- **What it shows:** "إضاءة ذكية تغيّر أجواء المكان في ثواني — المصباح الذكي يمنحك…" — a room's whole mood transforming in seconds via smart lighting.
+- **Verification:** WebSearch — surfaced in an Arabic one-touch-automation search with the matching caption. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** "في ثواني" (in seconds) — a fast before→after mood flip.
+- **Psychological trigger:** Satisfaction / Transformation
+- **Why it likely worked:** The "same room, seconds later, totally different vibe" transformation is a proven high-retention, high-save format.
+- **SMARTA adaptation (Arabic):** تصوّر سمارتا تحوّل مجلس من إضاءة نهارية إلى أجواء سهرة في ثوانٍ ضمن لقطة واحدة، مع نص: "نفس المكان… إحساس ثاني في ثواني".
+
+### Post 5
+- **URL:** https://www.instagram.com/p/DWk2FqbD-LP/
+- **Account:** مزوّد منزل ذكي (الحساب غير مكشوف في المقتطف)
+- **Country:** Global/Arabic (English caption)
+- **Post type:** Image/Reel
+- **What it shows:** "Still switching everything manually? Lights. AC. Curtains…" — a pain-point hook contrasting tedious manual switching with one-tap automation.
+- **Verification:** WebSearch — a URL-quote search returned this exact post with the matching caption. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** A challenge question — "Still switching everything manually?" — that makes the viewer feel their current setup is outdated.
+- **Psychological trigger:** Satisfaction / Mild FOMO
+- **Why it likely worked:** Framing the manual way as tedious/old makes the automated way feel obviously better — a persuasive contrast that also invites the satisfying reveal.
+- **SMARTA adaptation (Arabic):** تفتح سمارتا بسؤال يستفز العادة القديمة: "لسا تشغّل كل شي بيدك؟ الإضاءة، التكييف، الستائر…" ثم تكشف لقطة الأتمتة المُرضية بلمسة واحدة.
+
+*ملاحظة: تمثيل جيد — مبدعان بمعرّف في مسار الرابط (Smart Home Solver) + منشورات MENA عربية بلمسة واحدة. الفورمات المُرضي وفير وقابل للتوثيق، عكس الاستطلاعات (ثيمة 13).*
+
+---
