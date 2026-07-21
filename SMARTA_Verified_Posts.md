@@ -209,3 +209,69 @@ Where a candidate URL could **not** be re-confirmed by a second, independent sea
 *Note: no Gulf/MENA-specific "Smart Scene" post could be independently verified within this session's search budget (see Transparency Report) — all 5 verified posts for this theme are global brand accounts (Nanoleaf, Lutron).*
 
 ---
+
+## Theme 4: Reveal Moment
+
+### Post 1
+- **URL:** https://www.instagram.com/p/DX722IXNqF_/
+- **Account:** Somfy (official Somfy-branded content; the bare `/p/` URL format returned by search does not expose which regional Somfy handle — e.g. @somfy, @somfyus — posted it, so the specific handle is not claimed here to avoid guessing)
+- **Country:** Global brand (France-based, sold across GCC via @somfyuae/@somfymaroc etc.)
+- **Post type:** Image/carousel
+- **What it shows:** Caption "Motorized curtains powered by Somfy" — a product/lifestyle shot of curtains opening via motor, framed around the "touch of a button" natural-light reveal.
+- **Verification:** WebSearch — this exact URL was independently returned by two separate queries ("somfy motorized curtain reveal morning" and "'Motorized curtains powered by Somfy' instagram"), both times with the same indexed title, which is stronger cross-verification than a single hit. WebFetch returned HTTP 403 (see methodology note).
+- **Hook (opening line/visual):** Curtains mid-motion opening to reveal daylight flooding into the room.
+- **Psychological trigger:** Curiosity / Convenience
+- **Why it likely worked:** The "reveal" moment (closed → open, dark → bright) is inherently satisfying video content, a format that performs well regardless of product category.
+- **SMARTA adaptation (Arabic):** تصوّر سمارتا ستارة تُفتح تلقائيًا في الصباح لتكشف ضوء الشمس داخل غرفة النوم، مع تعليق: "صباحك يبدأ بلمسة ضوء طبيعي، دون أن تتحرك من سريرك".
+
+### Post 2
+- **URL:** https://www.instagram.com/p/DGUl4GjNfL2/
+- **Account:** Somfy (official Somfy-branded content; specific regional handle not exposed by search snippet — see note on Post 1)
+- **Country:** Global brand
+- **Post type:** Image/carousel
+- **What it shows:** Caption "Elevate your space with Somfy's motorized curtains & …" — a styled interior shot positioning motorized curtains as a design upgrade, not just a convenience feature.
+- **Verification:** WebSearch — independently returned by two separate queries with matching indexed title text each time. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** "Elevate your space" framing over a high-end, styled living room.
+- **Psychological trigger:** Luxury / Status
+- **Why it likely worked:** Pairs the functional reveal with an aspirational interior, so the takeaway is "nicer home," not just "automated curtain."
+- **SMARTA adaptation (Arabic):** تنشر سمارتا صورة لصالة فاخرة مع ستائر آلية مفتوحة جزئيًا بشكل أنيق، والتعليق: "التفاصيل الصغيرة مثل الستارة الذكية هي ما يميز الفلل الفاخرة".
+
+### Post 3
+- **URL:** https://www.instagram.com/p/DIA7MVistox/
+- **Account:** @aqara.smarthome.official (Aqara Smart Home — 52K followers)
+- **Country:** Global brand
+- **Post type:** Image/carousel
+- **What it shows:** Caption "We explore the @aqara.smarthome.official roller shade…" — a hands-on look at the Aqara Roller Shade Driver retrofitting an existing blind.
+- **Verification:** WebSearch — surfaced via query "aqara roller shade driver reveal", with indexed title explicitly naming the account handle within the caption text itself. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** Close-up of the small retrofit driver being clipped onto an ordinary roller shade — "this tiny thing controls your blinds."
+- **Psychological trigger:** Curiosity
+- **Why it likely worked:** It solves the objection "I don't want to replace my curtains" by showing the device attaching to an existing shade — practical curiosity, not just spectacle.
+- **SMARTA adaptation (Arabic):** توضح سمارتا كيف يمكن تركيب محرك ستائر ذكي على الستائر الموجودة حاليًا في المنزل دون استبدالها بالكامل، مع تعليق: "لا داعي لتغيير ستائرك لتحصل على منزل ذكي".
+
+### Post 4
+- **URL:** https://www.instagram.com/aqara.smarthome.official/reel/C48GdkjuK2j/
+- **Account:** @aqara.smarthome.official (Aqara Smart Home)
+- **Country:** Global brand
+- **Post type:** Reel
+- **What it shows:** Caption "Simplify your home setup with Aqara Roller Shade Driver…" — a short demo reel of the shade opening/closing via app control.
+- **Verification:** WebSearch — URL includes the account handle directly in its path, confirmed via query "aqara roller shade driver reveal" with matching indexed title. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** App tap → shade moves, shown in one continuous shot.
+- **Psychological trigger:** Convenience
+- **Why it likely worked:** Demonstrating the full loop (tap phone → shade responds) in a few seconds builds instant credibility for a device shoppers can't otherwise picture in motion.
+- **SMARTA adaptation (Arabic):** تصوّر سمارتا مقطعًا قصيرًا: يد تضغط على الجوال، والستارة في الخلفية تتحرك فورًا، مع نص: "تحكم بستائر منزلك من أي مكان في العالم".
+
+### Post 5
+- **URL:** https://www.instagram.com/theswitchbot/p/CXTnwD0s64a/
+- **Account:** @theswitchbot (SwitchBot — 41K followers)
+- **Country:** Global brand
+- **Post type:** Image/carousel
+- **What it shows:** Caption "#SwitchBot Curtain, perfect for any kind of curtain rail. U-…" — demonstrating the clip-on curtain robot working on different rail types.
+- **Verification:** WebSearch — URL includes the account handle directly in its path (`/theswitchbot/p/`), confirmed via query "theswitchbot instagram curtain open close" with matching indexed title. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** Side-by-side of the same robot clipped onto two different rail shapes — "works with what you already have."
+- **Psychological trigger:** Convenience / Practicality
+- **Why it likely worked:** Removing the "will this even fit my curtain rail" doubt up front is a direct objection-handling hook that performs well for retrofit gadgets.
+- **SMARTA adaptation (Arabic):** تنشر سمارتا مقارنة بصرية توضح أن الجهاز يعمل مع مختلف أنواع السكك الموجودة في المنازل السعودية، لتبديد الشك حول التوافق مع الستائر الحالية.
+
+*Note: the specific Somfy Maroc "vacation/curtain" post referenced in the research brief could not be located or verified within this session's search results — no Gulf/MENA-specific Reveal Moment post was verified for this theme; see Transparency Report.*
+
+---
