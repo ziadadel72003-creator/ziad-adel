@@ -3,7 +3,7 @@
 **Research date:** 2026-07-21
 **Focus bundle:** Family & Security (العائلة والأمان)
 **Verification method:** WebSearch cross-check (WebFetch to instagram.com is blocked with HTTP 403; see note)
-**Total verified posts:** in progress
+**Total verified posts:** 25 / 25
 
 ---
 
@@ -278,3 +278,85 @@ For this "Family & Security" bundle, MENA/Gulf accounts were prioritized and sev
 *ملاحظة: هذه الثيمة أصبحت كلها كاميرات رؤية ليلية (وهو محتوى وفير وموثّق جيدًا في السوق الخليجي/العربي). زاوية "مشهد النوم/الإضاءة التي تخفت" لم تُوثَّق كمنشور محدد هذه الجلسة، لكنها مقترحة لسمارتا في خانات التكييف أعلاه. حساب واحد موثّق بالاسم الكامل والتعليق (أنوار البحرين)، والبقية عبر مطابقة التعليق (ومعظمها تأكّد عبر استعلامين).*
 
 ---
+
+## Theme 10: Access & Staff Control (مراقبة الدخول والعمالة — الأقفال الذكية والرموز المؤقتة)
+
+*Framing: the winning angle here is **temporary / one-time access codes** — give the maid, driver, or delivery a code that works only at set times, and see an entry log of who came and when. This is a strong, culturally-specific fit for Saudi villa households managing domestic staff and deliveries.*
+
+### Post 1
+- **URL:** https://www.instagram.com/p/DYlV8S3Ct7l/
+- **Account:** @smartlockskw (أقفال ذكية Smart Locks & Home Co — Kuwait smart-lock company)
+- **Country:** Kuwait 🇰🇼
+- **Post type:** Image/carousel
+- **What it shows:** "جديد بصمة قفل الباب الذكي TTLock App رمز بطاقة مفتاح…" — a 5-way smart lock (fingerprint · PIN code · card · app · mechanical key) whose app can issue **temporary or one-time passwords** and control the allowed time window.
+- **Verification:** WebSearch — a URL-quote search returned this exact post attributed to **@smartlockskw (confirmed Kuwait smart-lock company)**, and the TTLock feature set (temporary/one-time codes, time-limited access) was corroborated by multiple independent product pages. WebFetch returned HTTP 403 (see methodology note).
+- **Hook (opening line/visual):** "5 ways to open" laid out visually — the viewer instantly sees the flexibility.
+- **Psychological trigger:** Control / Security (manage exactly who enters and when)
+- **Why it likely worked:** The multi-access + temporary-code story maps perfectly onto a real household need — letting staff/deliveries in without handing over a permanent key — which makes the value obvious and personal.
+- **SMARTA adaptation (Arabic):** تعرض سمارتا سيناريو واقعيًا: "أعطِ العاملة أو السائق أو مندوب التوصيل رمزًا مؤقتًا يعمل في وقت محدد فقط، وشوف سجل الدخول: مين دخل ومتى" — وهي حاجة يومية لأصحاب الفلل في السعودية.
+
+### Post 2
+- **URL:** https://www.instagram.com/aqara.smarthome.official/reel/DBjFm5GxCIf/
+- **Account:** @aqara.smarthome.official (Aqara Smart Home — 52K followers)
+- **Country:** Global brand (China; sold across GCC)
+- **Post type:** Reel
+- **What it shows:** "Looking for a secure, renter-friendly smart lock upgrade? 🔒 The Aqara Smart Lock U200 is the…" — a retrofit smart lock (installs with a screwdriver, keeps the existing deadbolt) with app control and multiple access methods.
+- **Verification:** WebSearch — the **account handle is in the URL path** (`/aqara.smarthome.official/reel/`) and a URL-quote search returned the matching full caption. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** "Secure, renter-friendly … only a screwdriver" — a low-commitment upgrade promise.
+- **Psychological trigger:** Security / Convenience (easy, non-destructive upgrade)
+- **Why it likely worked:** Framing the lock as an easy, reversible upgrade lowers the fear of "modifying my door," making a security purchase feel low-risk.
+- **SMARTA adaptation (Arabic):** تطمئن سمارتا العميل أن ترقية القفل الذكي سهلة وسريعة وبدون تخريب للباب، مع إبراز التركيب والدعم المحلي من سمارتا كميزة على الشراء المباشر من الخارج.
+
+### Post 3
+- **URL:** https://www.instagram.com/reel/DRCoB0_iLGK/
+- **Account:** موزّع أقفال عربي (الحساب غير مكشوف في المقتطف)
+- **Country:** MENA (Arabic)
+- **Post type:** Reel
+- **What it shows:** "قفل الباب الذكي يعمل بالبطارية ، مفتاح عادي، بالرقم السري، و…" — a battery smart lock listing its access methods (mechanical key, PIN code, and more).
+- **Verification:** WebSearch — surfaced in a smart-lock search with the matching Arabic caption. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** Plain list of "ways to open" including the reassuring "مفتاح عادي" (still has a normal key).
+- **Psychological trigger:** Security / Reassurance (no lock-out fear)
+- **Why it likely worked:** Keeping "a normal key" as a backup calms the top objection to smart locks — "what if the battery dies and I'm locked out?"
+- **SMARTA adaptation (Arabic):** تعالج سمارتا اعتراض "وش يصير لو خلصت البطارية؟" بوضوح (مفتاح احتياطي، بطارية تدوم طويلًا، تنبيه قبل النفاد)، لأن هذا القلق يمنع كثيرين من شراء القفل الذكي.
+
+### Post 4
+- **URL:** https://www.instagram.com/reel/DXLvpIdjLX6/
+- **Account:** موزّع أقفال عربي (يشمل التركيب — الحساب غير مكشوف في المقتطف)
+- **Country:** MENA (Arabic)
+- **Post type:** Reel
+- **What it shows:** "قفل باب ذكي مع تركيب – أمان وتقنية في جهاز واحد — حوّل باب…" — a smart lock offered **with installation included**, framed as "security + technology in one device."
+- **Verification:** WebSearch — surfaced in a smart-lock search with the matching Arabic caption. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** "مع تركيب" (installation included) — removes the DIY barrier entirely.
+- **Psychological trigger:** Convenience / Trust (done-for-you)
+- **Why it likely worked:** "Installation included" is exactly what a busy villa owner wants — a turnkey result, not a project — which is a natural strength for an installer like SMARTA.
+- **SMARTA adaptation (Arabic):** تبيع سمارتا الحل كاملًا "قفل + تركيب + برمجة + دعم" لا مجرد جهاز، لأن عميل الفيلا يريد نتيجة جاهزة — وهذه ميزة سمارتا الأساسية كمُركّب معتمد على المتاجر التي تبيع الجهاز فقط.
+
+### Post 5
+- **URL:** https://www.instagram.com/reel/DV6qgCVDFEM/
+- **Account:** موزّع أقفال عربي (يعرض LOCSTAR — الحساب غير مكشوف في المقتطف)
+- **Country:** MENA (Arabic)
+- **Post type:** Reel
+- **What it shows:** "اقفال باب ذكية من LOCSTAR" — a showcase of LOCSTAR-brand smart locks and their access features.
+- **Verification:** WebSearch — surfaced in a Kuwait smart-lock search with the matching Arabic caption naming the brand. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** Brand-led product showcase of the lock's finish and keypad.
+- **Psychological trigger:** Status / Security (premium hardware)
+- **Why it likely worked:** For a front door, the lock's look and build quality matter as a status object, not just a security tool — a premium keypad signals a premium home.
+- **SMARTA adaptation (Arabic):** تُبرز سمارتا التصميم الفاخر للقفل الذكي كقطعة تكمل واجهة الفيلا الراقية (تشطيبات، شاشة لمس أنيقة)، لأن الباب الأمامي واجهة مكانة وليس مجرد أداة أمان.
+
+*ملاحظة: حسابان موثّقان بالاسم/المعرّف (smartlockskw كويتي، aqara.smarthome.official بمعرّف في مسار الرابط)، والبقية عبر مطابقة التعليق. تمثيل خليجي/عربي قوي في هذه الثيمة، وزاوية "الرمز المؤقت للعمالة والتوصيل" هي الأنسب استراتيجيًا لسوق الفلل السعودي.*
+
+---
+
+
+## Transparency Report — Batch 2
+
+- **Themes with full 5 verified posts:** All 5 — Theme 6 (Kids & Room Safety), Theme 7 (Smart Doorbell & Camera), Theme 8 (Leak/Gas/Fire Sensors), Theme 9 (Night Security), Theme 10 (Access & Staff Control).
+- **Total: 25 / 25 verified posts.**
+- **Gulf/MENA representation (much stronger than Batch 1):** the majority of Batch-2 posts are MENA/Gulf accounts — Oman (@baby.monitor_om), Kuwait (@babymonitor_q8, @smartlockskw), Bahrain (أنوار البحرين), UAE (@mumzworldcom, @civildefencead — Abu Dhabi Civil Defence government authority), plus many Arabic-language reseller reels. The "Family & Security" bundle is inherently local, so Gulf coverage came far more naturally here than in the global-brand-heavy Batch 1. Global-brand authority anchors are included where they add credibility (Aqara FP2, Aqara G4, Aqara U200).
+- **Verification method (same as Batch 1):** direct `WebFetch` to `instagram.com` returns HTTP 403 for every URL, so all verification was via `WebSearch` cross-check. Strength varies:
+  - **Strongest** — account handle embedded in the URL path (`/{account}/p/` or `/{account}/reel/`): @aqara.smarthome.official posts, @housesupplysa, @engineering_arrow_co, @civildefencead.
+  - **Strong** — full caption text (or the shop name) visible in the search snippet: e.g. أنوار البحرين bulb-camera post (full bilingual caption + price), the Aqara FP2 fall-detection reel (full caption), the @smartlockskw TTLock post (caption + confirmed account).
+  - **Standard** — bare `/p/` or `/reel/` URL confirmed by a matching caption in search results, ideally re-confirmed by a second independent query (noted per post). Where the specific account handle was not exposed by the snippet, the account is labeled "الحساب غير مكشوف" rather than guessed.
+- **Where fewer identifiable big accounts existed** (Themes 8, 9, and parts of 7), the category is dominated by small/medium Arabic reseller accounts. These are genuinely the accounts producing this content in the market, so they are valid swipe references — but they are smaller accounts, and their exact handles were sometimes not recoverable from search snippets. This is disclosed per post.
+- **Same caution as Batch 1:** search-indexed titles/captions confirm a page existed and was crawled, but are lighter than opening the live post. Before using any of these internally, SMARTA's team should open each URL once in a logged-in Instagram session for a final human check. Treat this as a strong, search-verified shortlist.
+- **Engagement metrics:** not exposed to unauthenticated fetches or search engines, so no likes/comments/views are reported. Priority signals used instead: account type/authority (e.g., government civil-defence account, large regional retailer), handle-in-URL confirmation, repeated independent indexing, and topical fit.
