@@ -2,7 +2,7 @@
 
 **Research date:** 2026-07-21
 **Verification method:** WebSearch cross-check against Instagram's own indexed page metadata (see note below)
-**Total verified posts:** in progress — updated after each theme
+**Total verified posts:** 24 / 25
 
 ---
 
@@ -275,3 +275,68 @@ Where a candidate URL could **not** be re-confirmed by a second, independent sea
 *Note: the specific Somfy Maroc "vacation/curtain" post referenced in the research brief could not be located or verified within this session's search results — no Gulf/MENA-specific Reveal Moment post was verified for this theme; see Transparency Report.*
 
 ---
+
+## Theme 5: Vacation Protection
+
+### Post 1
+- **URL:** https://www.instagram.com/philipshue/p/C7jhE7_sd6-/
+- **Account:** @philipshue (Philips Hue — 242K followers)
+- **Country:** Global brand (Netherlands/Signify)
+- **Post type:** Image/carousel
+- **What it shows:** Caption "When the Mimic presence automation is running, your…" — introducing the Mimic Presence feature, which automatically turns lights on/off to simulate someone being home while the owner is away.
+- **Verification:** WebSearch — this exact URL was independently returned by two separate queries (a general Theme-3 scene search, and a direct quote search of the caption), both times with matching indexed title text confirming account and content. Corroborated further by an independent press source (Pocket-lint: "Philips Hue Mimic Presence feature is exactly what Kevin McCallister needed") describing the same feature. WebFetch returned HTTP 403 (see methodology note).
+- **Hook (opening line/visual):** Direct address of the exact anxiety ("your lights behave as if you were home") stated as the opening line.
+- **Psychological trigger:** Security / Fear reduction
+- **Why it likely worked:** It names the customer's specific fear (empty house while traveling) and offers a concrete, automatic solution — a textbook security-trigger hook.
+- **SMARTA adaptation (Arabic):** تنشر سمارتا منشورًا بعنوان "منزلك يبدو مسكونًا حتى وأنت في رحلتك" يشرح ميزة محاكاة الحضور التي تُشغل الإضاءة تلقائيًا وكأن العائلة في المنزل، لطمأنة العملاء المسافرين بأن فيلتهم ليست فارغة ظاهريًا.
+
+### Post 2
+- **URL:** https://www.instagram.com/nuki_smart_lock/reel/C7gfI1_t-Em/
+- **Account:** @nuki_smart_lock (Nuki — The Smart Lock, 43K followers)
+- **Country:** Austria/Europe
+- **Post type:** Reel
+- **What it shows:** Caption "You're not at home, but you still…" — demonstrating remote lock control, activity logs, or guest-access management from anywhere.
+- **Verification:** WebSearch — independently returned by two separate queries with matching indexed title each time. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** Opens by naming the exact travel scenario ("you're not at home") before revealing the reassurance.
+- **Psychological trigger:** Security / Control from a distance
+- **Why it likely worked:** Directly answers "did I lock the door?" — the single most common travel-anxiety question — with a visible, in-app proof point.
+- **SMARTA adaptation (Arabic):** تصوّر سمارتا شخصًا في المطار يتحقق من قفل بابه عبر الجوال ويقفله عن بُعد، مع تعليق: "أنت في الرحلة، وقفل بيتك بين يديك".
+
+### Post 3
+- **URL:** https://www.instagram.com/nuki_smart_lock/reel/C5Tbcumtcq4/
+- **Account:** @nuki_smart_lock (Nuki — The Smart Lock)
+- **Country:** Austria/Europe
+- **Post type:** Reel
+- **What it shows:** Caption "The top reasons our customers…" — a testimonial-style rundown of why real users bought a Nuki lock, including remote access and monitoring while away.
+- **Verification:** WebSearch — independently returned by two separate queries with matching indexed title. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** "Top reasons" listicle framing — invites the viewer to see themselves in one of the reasons.
+- **Psychological trigger:** Social proof
+- **Why it likely worked:** Letting real customer motivations do the selling (rather than brand copy) builds trust faster for a security-related purchase decision.
+- **SMARTA adaptation (Arabic):** تنشر سمارتا منشورًا بعنوان "لماذا يثق عملاؤنا بأنظمة سمارتا؟" يستعرض أسبابًا حقيقية مثل الأمان أثناء السفر والتحكم عن بعد، بصوت عملاء فعليين.
+
+### Post 4
+- **URL:** https://www.instagram.com/p/DTcduVWknKn/
+- **Account:** Blink (Amazon-owned home security camera brand; specific handle not exposed by search snippet — bare `/p/` URL, so not claimed with certainty)
+- **Country:** Global brand (USA)
+- **Post type:** Reel
+- **What it shows:** Caption "Easy Travel Hack ✈️🏡 If you want peace of mind, let Blink…" — framing a Blink camera as a literal "travel hack" for checking on the home while away.
+- **Verification:** WebSearch — independently returned by two separate queries (once via direct caption quote, once via general Ring/vacation search) with matching indexed title both times. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** "Easy Travel Hack" framing — borrows the high-performing travel-hack content format rather than a straight product pitch.
+- **Psychological trigger:** Security / Convenience
+- **Why it likely worked:** Positioning the camera as a "hack" (a tip you're let in on) rather than an ad increases share-worthiness, especially right before travel season.
+- **SMARTA adaptation (Arabic):** تنشر سمارتا "خدعة سفر ذكية ✈️🏡" تعرض كيفية مراقبة الفيلا بالكامل من الجوال أثناء السفر خارج المملكة، مستهدفة موسم الإجازات الصيفية وسفر العائلات السعودية.
+
+*Note: only 4/5 posts verified for this theme. A 5th candidate (a Ring "vacation/away mode" post, and several Gulf CCTV-retailer accounts such as @digital_domain_cctv and @cctv_camera_bh) were located as active, relevant accounts, but no specific post URL from them could be independently re-confirmed by a second search pass within this session — per the no-fabrication rule, no 5th post is included. See Transparency Report.*
+
+---
+
+## Transparency Report
+
+- **Themes with full 5 verified posts:** Theme 1 (Project of the Week), Theme 2 (30-Second Device Explainer), Theme 3 (Smart Scene), Theme 4 (Reveal Moment).
+- **Themes with fewer than 5:** Theme 5 (Vacation Protection) — 4/5 verified. A likely-real 5th candidate (official @ring "away/vacation" messaging, or a Gulf CCTV retailer such as @digital_domain_cctv / @cctv_camera_bh) could not be pinned to one specific, independently re-confirmed post URL within this session's search budget, so it was left out rather than guessed.
+- **Total: 24 / 25 verified posts.**
+- **Gulf/MENA representation:** 3 of 24 posts are MENA-based accounts (2× UAE — @mysmarthome.company, @primevillasdubai; content also referencing Bahrain's @iotbahrain in Theme 2, 2 posts). Themes 3 and 5 ended up with zero MENA-specific posts despite targeted searching (@iotbahrain, @somfymaroc, @smarthometechnology, @smartex.ae, and several Gulf CCTV/security retailers were all searched but did not yield a specific, independently verifiable post matching those themes). This is the most significant gap in the file and is flagged for a follow-up research pass if deeper MENA coverage is a priority.
+- **Accounts that were unreachable or blocked:** None were blocked outright — every account's public profile was reachable via WebSearch. The blocker was **at the individual post/URL level**: direct `WebFetch` to `instagram.com` returned HTTP 403 for every single URL tested in this session (confirmed across @control4, @somfy, @nuki_smart_lock, @philipshue, @aqara.smarthome.official, and others), so no post could be verified by the brief's primary method (WebFetch og:title/og:description). All 24 posts were instead verified via the brief's explicitly allowed fallback: WebSearch cross-check.
+- **Verification strength varies by post:** For roughly half the posts, the exact URL was independently returned by **two or more separate search queries** with matching indexed titles (strongest signal used here). For the rest, the URL surfaced from a single well-targeted query with an indexed title that matched both the account handle (in the URL path or title) and the theme's keywords. Every post's individual entry states which applied. No URL was included on the basis of a single, generic/ambiguous hit — those were discarded (e.g., a Loxone Platinum Partner post and a Somfy Maroc vacation post referenced in the brief were searched for specifically but could not be re-confirmed, so they are not included).
+- **A caution on this verification method:** WebSearch-indexed titles are a real signal (an independent crawler saw the live page), but they are a lighter-weight check than actually opening the post. Before publishing any of these as a creative reference internally, SMARTA's team should manually open each URL once in a logged-in Instagram session to do a final human eyeball check — this file should be treated as a strong, search-verified shortlist, not an unconditional guarantee that every post still exists unchanged at read-time.
+- **Notes on Instagram engagement metrics:** Instagram does not expose like/comment counts to unauthenticated fetches or to search engines, so no quantitative engagement data (likes, comments, views) is included anywhere in this file. Priority signals used instead, per the brief: account authority/size (follower counts where discoverable), repeated independent indexing of the same URL (treated as a rough proxy for the post being a real, stable, non-obscure piece of content), and topical fit with the theme.
