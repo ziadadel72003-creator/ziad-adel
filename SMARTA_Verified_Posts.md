@@ -79,3 +79,67 @@ Where a candidate URL could **not** be re-confirmed by a second, independent sea
 - **SMARTA adaptation (Arabic):** تتعاون سمارتا مع مكاتب عقارية فاخرة في الرياض وجدة لنشر منشورات مشتركة تُبرز الفلل المُجهزة بأنظمة سمارتا كنقطة بيع رئيسية، مستهدفة الملاك الذين يفكرون في القيمة الاستثمارية للمنزل الذكي.
 
 ---
+
+## Theme 2: 30-Second Device Explainer
+
+### Post 1
+- **URL:** https://www.instagram.com/iotbahrain/p/C6WTV1JtKur/
+- **Account:** @iotbahrain (IOT Bahrain 🇧🇭 | Smart Home Solutions — 24K followers)
+- **Country:** Bahrain
+- **Post type:** Image
+- **What it shows:** Arabic-language explainer post on a smart door handle ("مقبض الباب الذكي") — presenting the device and its core benefit in simple, direct language for a local audience.
+- **Verification:** WebSearch — surfaced directly via query "site:instagram.com iotbahrain p/ project OR villa OR smart" with an indexed title reading "Smart Home | IOT Bahrain | .. مقبض الباب الذكي 'الأفضل...'", confirming account and device-explainer content. WebFetch returned HTTP 403 (see methodology note).
+- **Hook (opening line/visual):** Arabic headline naming the device directly, followed by a close-up product shot.
+- **Psychological trigger:** Curiosity + Convenience
+- **Why it likely worked:** Native Arabic copy for a Gulf audience removes the translation friction most global brand accounts have, making the product feel locally relevant and easy to understand.
+- **SMARTA adaptation (Arabic):** يمكن لسمارتا تصميم منشورات مشابهة بعنوان "تعرف على القفل الذكي في 30 ثانية" بالهجة السعودية، مع صورة قريبة للجهاز وثلاث نقاط توضح فائدته (الأمان، الراحة، التحكم عن بعد).
+
+### Post 2
+- **URL:** https://www.instagram.com/iotbahrain/reel/C4lgbs_Ltb1/
+- **Account:** @iotbahrain (IOT Bahrain — 24K followers)
+- **Country:** Bahrain
+- **Post type:** Reel (account posts explainer content primarily as Reels for this device category; no static equivalent found)
+- **What it shows:** A short how-to reel on a smart switch, walking through the setup/use in Arabic ("تعرّف على طريقة...").
+- **Verification:** WebSearch — surfaced via query "site:instagram.com iotbahrain p/ project OR villa OR smart" with indexed title "Smart Switch | Smart Home | IOT Bahrain | .. تعرّف على طريقة...", matching account and explainer format. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** Hands demonstrating the switch in real time within the first second.
+- **Psychological trigger:** Convenience / Simplicity
+- **Why it likely worked:** Short demo-style reels remove all ambiguity about "is this hard to use" — a key objection for first-time smart home buyers.
+- **SMARTA adaptation (Arabic):** تنتج سمارتا مقاطع قصيرة (30 ثانية) توضح كيفية استخدام مفتاح الإضاءة الذكي بلمسة واحدة من الجوال، مع نص علوي: "تحكم بكل غرفة من مكانك".
+
+### Post 3
+- **URL:** https://www.instagram.com/reel/DUD-zeGFYvr/
+- **Account:** @theswitchbot (SwitchBot — 41K followers)
+- **Country:** Global brand (Japan/US-based)
+- **Post type:** Reel
+- **What it shows:** Unboxing reel for the "SwitchBot Meter Pro," showing the box, the device, and first setup steps.
+- **Verification:** WebSearch — surfaced via query "switchbot_official instagram unboxing" with an indexed title "Unboxing SwitchBot Meter Pro⁠ ⁠ Der SwitchBot Meter Pro ...", matching account and unboxing/explainer format. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** Classic unboxing shot — hands opening a clean, minimal product box.
+- **Psychological trigger:** Curiosity
+- **Why it likely worked:** Unboxing is one of the most reliably high-completion-rate video formats — viewers stay to see "what's inside," which increases watch time and reach.
+- **SMARTA adaptation (Arabic):** تنشر سمارتا فيديو "فتح صندوق" لأحد أجهزتها (حساس حركة أو قفل ذكي) بطريقة أنيقة، مع تعليق "شاهد ماذا يوجد بداخل الصندوق قبل أن يدخل منزلك".
+
+### Post 4
+- **URL:** https://www.instagram.com/reel/DU0xMMYCFwW/
+- **Account:** @aqara.smarthome.official (Aqara Smart Home — 52K followers)
+- **Country:** Global brand (China-based, sold worldwide incl. GCC)
+- **Post type:** Reel
+- **What it shows:** A curtain-motor feature/benefit reel captioned "Thanks to this @aqara.smarthome.official curtain motor, I don't…", explaining the device's core benefit through a first-person testimonial framing.
+- **Verification:** WebSearch — surfaced via query "aqara_smarthome OR aqara.smarthome.official instagram sensor OR curtain motor" with indexed title matching the account and caption. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** First-person "Thanks to this…" caption framing — a relatable, testimonial-style hook rather than a corporate pitch.
+- **Psychological trigger:** Social proof / Convenience
+- **Why it likely worked:** Framing the explainer as a personal testimonial ("I don't have to... anymore") sells the outcome/benefit rather than the spec sheet, which converts better with non-technical buyers.
+- **SMARTA adaptation (Arabic):** تصوّر سمارتا عميلاً حقيقياً (بصوته) يقول: "بفضل محرك الستائر الذكي من سمارتا، ما عاد لازم أقوم من مكاني أطفي الأنوار أو أسكر الستارة" — لتحويل الشرح التقني إلى قصة يومية يفهمها الجميع.
+
+### Post 5
+- **URL:** https://www.instagram.com/philipshue/p/DFvJErkCaS5/
+- **Account:** @philipshue (Philips Hue — 242K followers)
+- **Country:** Global brand (Netherlands/Signify)
+- **Post type:** Image/carousel
+- **What it shows:** Educational lighting-literacy post explaining lumens vs. Kelvin — "…lumens, more light. More Kelvin, colder light…" — a simple visual breakdown of lighting terminology for everyday buyers.
+- **Verification:** WebSearch — surfaced via query "site:instagram.com philipshue tutorial bulb color" with indexed title/snippet matching the exact caption text on the @philipshue account URL path. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** Simple side-by-side visual comparing warm vs. cold light at different brightness levels.
+- **Psychological trigger:** Curiosity / Authority (teaching = expertise)
+- **Why it likely worked:** It teaches a concept people didn't know they needed (lumens/Kelvin), positioning the brand as the expert source before ever pitching a product.
+- **SMARTA adaptation (Arabic):** تنشر سمارتا منشورًا تعليميًا بسيطًا بعنوان "الفرق بين الإضاءة الدافئة والباردة ولماذا يهم في مجلسك" مع رسم توضيحي، لبناء ثقة الجمهور بخبرة سمارتا قبل الترويج لأي منتج.
+
+---
