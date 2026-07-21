@@ -210,3 +210,71 @@ For this "Family & Security" bundle, MENA/Gulf accounts were prioritized and sev
 *ملاحظة: لم يُعثر على منشور إنستغرام موثّق من علامة عالمية (مثل Aqara water leak) لهذه الثيمة؛ الطبيعة المحلية للسلامة جعلت التغطية خليجية/عربية بالكامل — وهو في الواقع أنسب لسوق سمارتا. حسابان موثّقان بمعرّف في مسار الرابط (civildefencead, engineering_arrow_co)، والبقية عبر مطابقة التعليق.*
 
 ---
+
+## Theme 9: Night Security & "Goodnight" (الأمان الليلي / وضع النوم)
+
+*Framing: this theme is anchored on **night-vision security** (the strongest verified content, and squarely "الأمان الليلي"). The complementary "sleep-mode / goodnight lighting" angle is noted for SMARTA below, but no single specific goodnight-lighting post could be independently verified this session, so all 5 verified posts here are night-security cameras.*
+
+### Post 1
+- **URL:** https://www.instagram.com/reel/DYcf1IANOQU/
+- **Account:** أنوار البحرين للهواتف (Anwar Bahrain — phones/smart-devices retailer)
+- **Country:** Bahrain 🇧🇭
+- **Post type:** Reel
+- **What it shows:** A smart bulb-socket camera — "كاميرا ذكية تركب في مكان اللمبة 💡📷 … رؤية ليلية ملونة … دوران 360° … تتبع حركة تلقائي" (installs into a light-bulb socket, color night vision, 360° rotation, auto motion tracking, two-way audio), priced 4.950 BD with free Bahrain delivery.
+- **Verification:** WebSearch — the search returned this exact reel with its **full caption text (Arabic + English, including specs, price in BD, and the shop name) visible in the snippet** — the strongest possible verification short of opening the post. WebFetch returned HTTP 403 (see methodology note).
+- **Hook (opening line/visual):** "كاميرا ذكية تركب في مكان اللمبة" (a camera that screws into a light-bulb socket) — a surprising, no-wiring install.
+- **Psychological trigger:** Security / Convenience (night monitoring, zero installation)
+- **Why it likely worked:** "Installs in a bulb socket, no wiring" removes the biggest friction of home cameras, and "color night vision" directly sells the night-security promise.
+- **SMARTA adaptation (Arabic):** تعرض سمارتا حلول المراقبة الليلية سهلة التركيب (رؤية ليلية ملونة، تركيب بدون تمديدات)، مع التركيز على أن الفيلا محميّة ليلًا بوضوح كامل — وربطها بمشهد "تصبح على خير" الذي يقفل الأبواب ويطفئ الأنوار ويفعّل المراقبة بضغطة واحدة.
+
+### Post 2
+- **URL:** https://www.instagram.com/reel/DTsXZ12jOBB/
+- **Account:** موزّع عربي (كاميرات مراقبة — الحساب غير مكشوف في المقتطف)
+- **Country:** MENA (Arabic)
+- **Post type:** Reel
+- **What it shows:** "أقوى كاميرا مراقبة لاسلكية 180° | جبارة في التصوير الليلي" — a wide-angle (180°) wireless camera emphasizing powerful night imaging.
+- **Verification:** WebSearch — this exact URL was returned by **two independent queries** with the same Arabic caption. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** "جبارة في التصوير الليلي" (a beast at night imaging) — a bold performance claim aimed at the night-security worry.
+- **Psychological trigger:** Security (night performance)
+- **Why it likely worked:** Night is when break-in fear peaks; leading with "powerful at night" targets the exact moment of anxiety.
+- **SMARTA adaptation (Arabic):** تُبرز سمارتا جودة الرؤية الليلية تحديدًا في محتواها الأمني، لأن قلق العميل يتركّز في ساعات الليل — "شوف كل زاوية في فيلتك بوضوح حتى في الظلام".
+
+### Post 3
+- **URL:** https://www.instagram.com/p/DWpFYyOiFaM/
+- **Account:** موزّع عربي (كاميرات مراقبة — الحساب غير مكشوف في المقتطف)
+- **Country:** MENA (Arabic)
+- **Post type:** Image/carousel
+- **What it shows:** "🎥 خليك دايمًا مطمّن على بيتك أو شغلك… مع أحدث كاميرات…" — a peace-of-mind pitch for staying reassured about home/business at all times.
+- **Verification:** WebSearch — this exact URL was returned by **two independent queries** with the same Arabic caption. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** "خليك دايمًا مطمّن" (stay reassured, always) — pure emotional peace-of-mind framing.
+- **Psychological trigger:** Security / Reassurance
+- **Why it likely worked:** It sells the feeling (peace of mind) rather than the hardware, which is what actually drives security purchases.
+- **SMARTA adaptation (Arabic):** تركّز سمارتا على بيع "الطمأنينة" لا الكاميرا: "نام مرتاح وأنت عارف إن فيلتك تحت عينك طول الليل" — تحويل المنتج إلى شعور.
+
+### Post 4
+- **URL:** https://www.instagram.com/reel/DWrI2DXCGWO/
+- **Account:** موزّع عربي (كاميرات مراقبة — الحساب غير مكشوف في المقتطف)
+- **Country:** MENA (Arabic)
+- **Post type:** Reel
+- **What it shows:** "كاميرا مراقبة مزدوجة بعدستين رؤية ليلية ملوّنة، تتبّع حركة…" — a dual-lens camera with color night vision and motion tracking.
+- **Verification:** WebSearch — surfaced in a night-vision camera search with the matching Arabic caption. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** "بعدستين" (dual-lens) + "رؤية ليلية ملوّنة" — concrete upgrade specs.
+- **Psychological trigger:** Security (superior coverage)
+- **Why it likely worked:** Specific differentiators (two lenses, color night vision, tracking) make it feel like a real upgrade over a basic camera, justifying the choice.
+- **SMARTA adaptation (Arabic):** تشرح سمارتا الفروق التقنية التي تهم فعلًا في الأمان الليلي (رؤية ملوّنة مقابل أبيض وأسود، تتبّع الحركة، التغطية المزدوجة)، لتساعد العميل على اختيار الأنسب لفيلته.
+
+### Post 5
+- **URL:** https://www.instagram.com/reel/DLnBWlWNpwN/
+- **Account:** موزّع عربي (كاميرات مراقبة — الحساب غير مكشوف في المقتطف)
+- **Country:** MENA (Arabic)
+- **Post type:** Reel
+- **What it shows:** "كاميرا رؤية ليلية ..صوت ثنائي الاتجاه .. مستشعر حركة و تعمل…" — a night-vision camera with two-way audio and a motion sensor.
+- **Verification:** WebSearch — this exact URL surfaced in **two independent** night-vision camera searches with the same Arabic caption. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** Rapid feature list (night vision · two-way audio · motion sensor) delivered fast.
+- **Psychological trigger:** Security / Control
+- **Why it likely worked:** Two-way audio adds an active element ("talk to whoever's there at night"), turning passive watching into control.
+- **SMARTA adaptation (Arabic):** تُبرز سمارتا ميزة الصوت ثنائي الاتجاه: "لو سمعت حركة بالليل، كلّم اللي برّا من جوالك مباشرة" — تحويل المراقبة السلبية إلى تحكّم فعّال.
+
+*ملاحظة: هذه الثيمة أصبحت كلها كاميرات رؤية ليلية (وهو محتوى وفير وموثّق جيدًا في السوق الخليجي/العربي). زاوية "مشهد النوم/الإضاءة التي تخفت" لم تُوثَّق كمنشور محدد هذه الجلسة، لكنها مقترحة لسمارتا في خانات التكييف أعلاه. حساب واحد موثّق بالاسم الكامل والتعليق (أنوار البحرين)، والبقية عبر مطابقة التعليق (ومعظمها تأكّد عبر استعلامين).*
+
+---
