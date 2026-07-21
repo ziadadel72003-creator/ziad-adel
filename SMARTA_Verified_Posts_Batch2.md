@@ -144,3 +144,69 @@ For this "Family & Security" bundle, MENA/Gulf accounts were prioritized and sev
 *ملاحظة: هذه الثيمة تميل لحسابات موزّعين عرب صغيرة/متوسطة إضافةً إلى مرجعية عالمية (Aqara) وحساب سعودي (House Supply). الحسابات ذات الروابط المجرّدة (`/p/` أو `/reel/`) وُثّقت عبر مطابقة التعليق في نتائج البحث، وليس عبر معرّف في مسار الرابط.*
 
 ---
+
+## Theme 8: Leak, Gas & Fire Safety Sensors (حساسات التسريب والغاز والحريق)
+
+### Post 1
+- **URL:** https://www.instagram.com/reel/DXexm5ijeuf/
+- **Account:** @civildefencead (هيئة أبوظبي للدفاع المدني — Abu Dhabi Civil Defence Authority, 47K followers)
+- **Country:** United Arab Emirates 🇦🇪 (government authority)
+- **Post type:** Reel
+- **What it shows:** An official public-safety reel on "أهمية تركيب…" (the importance of installing smoke/fire detectors at home) — authoritative, educational guidance from the civil defence authority.
+- **Verification:** WebSearch — a URL-quote search returned the **@civildefencead account (confirmed 47K-follower government authority)** and surfaced this exact "أهمية تركيب" reel on it. WebFetch returned HTTP 403 (see methodology note).
+- **Hook (opening line/visual):** Official civil-defence branding + "أهمية تركيب" (why you must install this) — carries government authority.
+- **Psychological trigger:** Authority / Fear (official safety warning)
+- **Why it likely worked:** Public-safety content from a government authority carries unmatched credibility and gets shared as a civic duty ("protect your family"), not as an ad.
+- **SMARTA adaptation (Arabic):** تستشهد سمارتا بإرشادات الدفاع المدني حول أهمية كاشفات الدخان والغاز، وتربطها بحلولها الذكية التي ترسل تنبيهًا للجوال فورًا — لتضع نفسها كشريك موثوق في سلامة الأسرة لا مجرد بائع.
+
+### Post 2
+- **URL:** https://www.instagram.com/reel/DRpgjonDAn6/
+- **Account:** موزّع عربي (كاشف غاز معتمد من الدفاع المدني — الحساب غير مكشوف في المقتطف)
+- **Country:** MENA (Arabic)
+- **Post type:** Reel
+- **What it shows:** "جهاز كشف الغاز (كاشف الغاز + قاطع الغاز) معتمد من الدفاع المدني" — a gas detector bundled with an automatic gas shut-off valve, marketed as civil-defence-approved.
+- **Verification:** WebSearch — a URL-quote search returned this exact reel URL with the matching Arabic caption. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** "معتمد من الدفاع المدني" (civil-defence approved) — an authority stamp as the trust anchor.
+- **Psychological trigger:** Security / Authority (official approval)
+- **Why it likely worked:** "Civil-defence approved" + an automatic shut-off (not just an alarm) promises action, not just warning — it prevents the disaster, doesn't only announce it.
+- **SMARTA adaptation (Arabic):** تُبرز سمارتا أن حلولها لا تكتفي بالتنبيه بل تتخذ إجراءً (قطع الغاز/الماء تلقائيًا)، مع الإشارة إلى الاعتمادات الرسمية حيثما وُجدت، لبناء ثقة عالية في فئة حساسة كالسلامة.
+
+### Post 3
+- **URL:** https://www.instagram.com/engineering_arrow_co/p/CGUoUgEhLUa/
+- **Account:** @engineering_arrow_co (Engineering Arrow — safety/engineering supplier)
+- **Country:** MENA (Arabic)
+- **Post type:** Image/carousel
+- **What it shows:** "جهاز كاشف تسرب الغاز التركي الأصلي مع قاطع…" — an original Turkish-made gas-leak detector with an automatic cut-off, presented with specs and trust cues.
+- **Verification:** WebSearch — the **account handle is embedded directly in the URL path** (`/engineering_arrow_co/p/`), and the post surfaced in a gas-detector search with a matching Arabic caption. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** "التركي الأصلي" (genuine Turkish-made) — an origin/quality trust cue local buyers respond to.
+- **Psychological trigger:** Security / Value (genuine quality)
+- **Why it likely worked:** Origin-of-manufacture and "original/genuine" cues matter for safety devices in this market, where buyers fear cheap fakes on something life-critical.
+- **SMARTA adaptation (Arabic):** تطمئن سمارتا العملاء بمنشأ وجودة أجهزة السلامة التي تركّبها (شهادات، ضمان، منشأ معروف)، لأن الثقة في هذه الفئة تعتمد على "هل الجهاز أصلي وموثوق".
+
+### Post 4
+- **URL:** https://www.instagram.com/reel/DTsS8XnAt1L/
+- **Account:** موزّع/مختص سلامة عربي (الحساب غير مكشوف في المقتطف)
+- **Country:** MENA (Arabic)
+- **Post type:** Reel
+- **What it shows:** "جهاز إنذار الحريق وكاشف الدخان ليسا متماثلين. كاشف الدخان…" — an educational reel explaining the difference between a fire alarm and a smoke detector.
+- **Verification:** WebSearch — surfaced in a smoke/fire-detector search with the matching Arabic caption. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** A myth-busting opener ("they are NOT the same thing") — curiosity + correction.
+- **Psychological trigger:** Curiosity / Authority (teaching)
+- **Why it likely worked:** Correcting a common misunderstanding ("aren't these the same?") is a strong educational hook — it makes the viewer feel they learned something they were getting wrong.
+- **SMARTA adaptation (Arabic):** تنشر سمارتا محتوى تعليميًا يصحّح مفاهيم شائعة (الفرق بين كاشف الدخان وإنذار الحريق، أو بين الحساس والكاميرا)، لتترسّخ كمصدر خبير قبل الترويج لأي منتج.
+
+### Post 5
+- **URL:** https://www.instagram.com/reel/DRugyoajHKA/
+- **Account:** موزّع سلامة عربي (الحساب غير مكشوف في المقتطف)
+- **Country:** MENA (Arabic)
+- **Post type:** Reel
+- **What it shows:** "لسلامتك و سلامة أحبابك و منزلك — جهاز كاشف الدخان و الحريق بنظام…" — an emotional safety pitch for a smoke/fire detector framed around protecting loved ones.
+- **Verification:** WebSearch — surfaced in a smoke/fire-detector search with the matching Arabic caption. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** "لسلامتك و سلامة أحبابك" (for your safety and your loved ones') — direct family-fear framing.
+- **Psychological trigger:** Security / Fear (family)
+- **Why it likely worked:** Framing a safety device around "أحبابك" (your loved ones) converts a dry product into an act of care — the strongest motivator in this category.
+- **SMARTA adaptation (Arabic):** تستخدم سمارتا تأطير "سلامة من تحب" في محتوى السلامة، لأن دافع حماية العائلة أقوى بكثير من المواصفات التقنية في تحفيز الشراء لدى الجمهور السعودي.
+
+*ملاحظة: لم يُعثر على منشور إنستغرام موثّق من علامة عالمية (مثل Aqara water leak) لهذه الثيمة؛ الطبيعة المحلية للسلامة جعلت التغطية خليجية/عربية بالكامل — وهو في الواقع أنسب لسوق سمارتا. حسابان موثّقان بمعرّف في مسار الرابط (civildefencead, engineering_arrow_co)، والبقية عبر مطابقة التعليق.*
+
+---
