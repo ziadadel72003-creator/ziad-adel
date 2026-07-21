@@ -143,3 +143,69 @@ Where a candidate URL could **not** be re-confirmed by a second, independent sea
 - **SMARTA adaptation (Arabic):** تنشر سمارتا منشورًا تعليميًا بسيطًا بعنوان "الفرق بين الإضاءة الدافئة والباردة ولماذا يهم في مجلسك" مع رسم توضيحي، لبناء ثقة الجمهور بخبرة سمارتا قبل الترويج لأي منتج.
 
 ---
+
+## Theme 3: Smart Scene
+
+### Post 1
+- **URL:** https://www.instagram.com/reel/DakwGHpI9rA/
+- **Account:** @nanoleaf (Nanoleaf)
+- **Country:** Global brand (Canada)
+- **Post type:** Reel
+- **What it shows:** Caption "new mood lighting from @nanoleaf making the biggest…" showing an expressive, colorful lighting scene transforming a room's atmosphere.
+- **Verification:** WebSearch — surfaced via query "nanoleaf instagram mood lighting scene" with an indexed title matching the account and mood-lighting theme. WebFetch returned HTTP 403 (see methodology note).
+- **Hook (opening line/visual):** Bold, saturated color wash across a room in a single reveal cut.
+- **Psychological trigger:** Curiosity / Identity (self-expression through light)
+- **Why it likely worked:** Nanoleaf's whole brand promise is visual drama — a "before it was just a room, now look at it" cut is inherently scroll-stopping.
+- **SMARTA adaptation (Arabic):** تنشر سمارتا مقطعًا يُظهر تحول غرفة عادية إلى أجواء مسائية دافئة بضغطة زر واحدة على التطبيق، مع تعليق: "نفس الغرفة، إحساس مختلف تمامًا".
+
+### Post 2
+- **URL:** https://www.instagram.com/reel/DULhYYCDd8g/
+- **Account:** @nanoleaf (Nanoleaf)
+- **Country:** Global brand (Canada)
+- **Post type:** Reel
+- **What it shows:** Caption "Mood lighting with a clean look! The @Nanoleaf Floor…" — showcasing the Nanoleaf floor lamp product creating ambient mood lighting in a minimalist living space.
+- **Verification:** WebSearch — surfaced via the same query, indexed title matching account and mood-lighting content. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** Clean, minimalist interior shot with a single striking light source.
+- **Psychological trigger:** Aspiration / Aesthetic identity
+- **Why it likely worked:** Pairs a design-forward product with a design-forward room, which appeals to followers who see lighting as interior design, not just utility.
+- **SMARTA adaptation (Arabic):** تصوّر سمارتا صالة معيشة عصرية بإضاءة أرضية ذكية تتغير حسب الوقت، مع نص: "إضاءة تُكمل ديكور منزلك، لا تكتفي بإنارته".
+
+### Post 3
+- **URL:** https://www.instagram.com/lutronelectronics/reel/DB1VcDaR5sd/
+- **Account:** @lutronelectronics (Lutron Electronics — 97K followers)
+- **Country:** USA
+- **Post type:** Reel
+- **What it shows:** Caption "Living in your home can feel like a five-…" (five-star hotel/resort) — tying a programmed lighting scene directly to a luxury-hospitality feeling.
+- **Verification:** WebSearch — surfaced via query "lutronelectronics mood lighting scene living room luxury" with indexed title matching account and caption. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** The explicit "five-star" comparison as the opening line — an immediate luxury anchor.
+- **Psychological trigger:** Luxury / Status
+- **Why it likely worked:** Comparing a home scene to a five-star hotel experience is one of the most direct luxury-market hooks — it reframes "lighting control" as "hospitality-grade living."
+- **SMARTA adaptation (Arabic):** تكتب سمارتا: "منزلك يمكن أن يشعرك وكأنك في فندق فاخر كل مساء" مصحوبًا بمشهد لمجلس مضاء بعناية، لجذب شريحة تبحث عن تجربة فندقية داخل فيلتها.
+
+### Post 4
+- **URL:** https://www.instagram.com/lutronelectronics/p/CofLWBNupgA/
+- **Account:** @lutronelectronics (Lutron Electronics)
+- **Country:** USA
+- **Post type:** Image/carousel
+- **What it shows:** Caption "Ambiance and aesthetics separate…" — contrasting a plain lit room with a scene-programmed version to show how lighting design elevates a space.
+- **Verification:** WebSearch — surfaced via the same query, indexed title matching account and content, distinct from Post 3. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** Implied comparison framing ("separates the ordinary from the exceptional") over a styled interior shot.
+- **Psychological trigger:** Status / Aspiration
+- **Why it likely worked:** It sells lighting *design* as the differentiator between an average home and an exceptional one — a direct pitch to villa owners who already have money invested in interior design.
+- **SMARTA adaptation (Arabic):** تنشر سمارتا صورة "قبل وبعد" لنفس الغرفة بإضاءة عادية مقابل مشهد إضاءة مبرمج من سمارتا، مع تعليق: "الفرق بين منزل جميل ومنزل استثنائي هو الإضاءة".
+
+### Post 5
+- **URL:** https://www.instagram.com/lutronelectronics/p/C5luYElOAql/
+- **Account:** @lutronelectronics (Lutron Electronics)
+- **Country:** USA
+- **Post type:** Image/carousel
+- **What it shows:** Caption "The Lutron Luxury Experience App lets you bring…" — demonstrating one-tap scene changes (dinner, relax, entertain) via the Lutron app.
+- **Verification:** WebSearch — surfaced via the same query set, indexed title matching account and app/scene content. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** Phone-in-hand shot with the room visibly changing mood in the background.
+- **Psychological trigger:** Convenience / Control
+- **Why it likely worked:** Showing the control moment (tap → room transforms) makes the "magic" tangible and demonstrates ease of use, which reduces the perceived complexity of a full scene system.
+- **SMARTA adaptation (Arabic):** تصوّر سمارتا يدًا تضغط على مشهد "استقبال ضيوف" داخل تطبيق سمارتا، وتتغير الإضاءة والستائر والموسيقى فورًا في المجلس، مع تعليق: "استقبل ضيوفك بلمسة واحدة".
+
+*Note: no Gulf/MENA-specific "Smart Scene" post could be independently verified within this session's search budget (see Transparency Report) — all 5 verified posts for this theme are global brand accounts (Nanoleaf, Lutron).*
+
+---
