@@ -84,3 +84,71 @@ Themes 11–13 are, by their nature (premium European switch brands; global ligh
 *ملاحظة: هذه الثيمة عالمية بطبيعتها (علامات مفاتيح أوروبية فاخرة: Gira, Lutron, Basalte, JUNG) — وهو ما طابق مصادر النمط التي حددها العميل. أربعة من الخمسة موثّقة بمعرّف الحساب في مسار الرابط (أقوى إشارة).*
 
 ---
+
+## Theme 12: "How Much Do You Save?" — Energy Infographic (كم توفّر؟)
+
+*Trigger: Saving Money. Note: a ready-made "annual savings in SAR" infographic post could not be found verified on Instagram — brand accounts express savings as **percentages** and MENA content centers on **AC/electricity**. The exact SAR-infographic format is therefore a **content gap = an opportunity** for SMARTA to own (an original infographic in riyals would stand out). The verified posts below are the closest real style references.*
+
+### Post 1
+- **URL:** https://www.instagram.com/lutronelectronics/p/C1papW4Pprq/
+- **Account:** @lutronelectronics (Lutron Electronics — 97K followers)
+- **Country:** USA (global brand)
+- **Post type:** Image/carousel
+- **What it shows:** "Save energy, optimize space use, and…" — a value-led post on how Lutron light + shade control cuts wasted energy.
+- **Verification:** WebSearch — the **account handle is in the URL path** (`/lutronelectronics/p/`) with the matching "save energy" caption. WebFetch returned HTTP 403 (see methodology note).
+- **Hook (opening line/visual):** "Save energy" stated first — a benefit headline, not a product name.
+- **Psychological trigger:** Saving Money / Value
+- **Why it likely worked:** Leading with the outcome (save energy) rather than the tech makes the value instantly legible to a non-technical buyer.
+- **SMARTA adaptation (Arabic):** تنشر سمارتا منشورًا يقود بالفائدة: "قلّل فاتورتك" لا "نظام إضاءة ذكي" — مع إبراز أن التحكم بالإضاءة والستائر يقطع الهدر.
+
+### Post 2
+- **URL:** https://www.instagram.com/lutronelectronics/reel/C0MYJfHq5QW/
+- **Account:** @lutronelectronics (Lutron Electronics)
+- **Country:** USA (global brand)
+- **Post type:** Reel
+- **What it shows:** A Lutron reel on energy efficiency through automated light/shade control (dimming + daylight use reduces consumption).
+- **Verification:** WebSearch — the **account handle is in the URL path** (`/lutronelectronics/reel/`), surfaced in a Lutron energy-efficiency search. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** Motion of shades/lights adjusting automatically to save power.
+- **Psychological trigger:** Saving Money / Convenience
+- **Why it likely worked:** Showing the automation *doing* the saving (no effort from the owner) sells effortless efficiency, not sacrifice.
+- **SMARTA adaptation (Arabic):** توضح سمارتا أن التوفير يحصل تلقائيًا دون تنازل عن الراحة: "النظام يوفّر عنك وأنت نايم" — الأتمتة تخفض الاستهلاك بلا جهد.
+
+### Post 3
+- **URL:** https://www.instagram.com/iappsautomation/p/DFEfFWyhdMA/
+- **Account:** @iappsautomation (iApps Automation — Lutron/Savant integrator, Philippines)
+- **Country:** Philippines (integrator — a peer to SMARTA)
+- **Post type:** Image/carousel
+- **What it shows:** "With LUTRON light controls, you can save energy…" — an integrator's own value post explaining the savings of Lutron controls to end customers.
+- **Verification:** WebSearch — the **account handle is in the URL path** (`/iappsautomation/p/`); the account was confirmed as a Lutron/Savant integrator. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** An installer (not the manufacturer) making the savings pitch — closer to a real buyer.
+- **Psychological trigger:** Saving Money / Trust (local-installer voice)
+- **Why it likely worked:** This is the exact playbook SMARTA can copy — an integrator translating a global brand's benefit into a customer-facing savings message.
+- **SMARTA adaptation (Arabic):** هذا تحديدًا ما تنسخه سمارتا: تأخذ فائدة العلامة العالمية وتترجمها لرسالة توفير موجّهة لعميل الفيلا السعودي بالريال وبأمثلة محلية.
+
+### Post 4
+- **URL:** https://www.instagram.com/reel/DRzrpDYDE5W/
+- **Account:** تمكين / Tamkeen (Arabic HVAC/AC content account)
+- **Country:** MENA (Arabic; Gulf HVAC focus)
+- **Post type:** Reel
+- **What it shows:** "هل تكييف الدكت يقلل استهلاك الكهرباء؟" (Does ducted AC reduce electricity consumption?) — an Arabic question-format reel tackling the region's biggest energy cost: air conditioning.
+- **Verification:** WebSearch — a URL-quote search returned this exact reel attributed to the **تمكين/Tamkeen** account with the matching Arabic caption. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** A direct question — "does ducted AC cut your bill?" — that the target audience genuinely wonders.
+- **Psychological trigger:** Saving Money / Curiosity (question hook)
+- **Why it likely worked:** In the Gulf, AC is the dominant electricity cost, so a question about cutting the AC bill hits the single most relevant savings lever — and the question format invites comments.
+- **SMARTA adaptation (Arabic):** تركّز سمارتا رسالة التوفير على التكييف تحديدًا (أكبر بند في فاتورة الصيف الخليجي): "كم يوفّر لك التحكم الذكي بالتكييف سنويًا؟" بصيغة سؤال تحفّز التعليقات.
+
+### Post 5
+- **URL:** https://www.instagram.com/reel/C_luDHOSDHR/
+- **Account:** Lutron (official; "Natural Light Optimization" content — bare `/reel/`, regional handle not exposed)
+- **Country:** USA (global brand)
+- **Post type:** Reel
+- **What it shows:** "Get to know Natural Light Optimization…" — automating shades to use free daylight and cut artificial-lighting energy.
+- **Verification:** WebSearch — surfaced in a Lutron energy search with the matching "Natural Light Optimization" caption. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** Sunlight filling a room as shades adjust — "let daylight do the work."
+- **Psychological trigger:** Saving Money / Comfort
+- **Why it likely worked:** "Use the free sunlight you already have" is an intuitive, guilt-free savings idea that also improves how the room feels.
+- **SMARTA adaptation (Arabic):** تشرح سمارتا "الاستفادة من ضوء النهار المجاني": الستائر الذكية تفتح وتغلق حسب الشمس لتقليل الإضاءة والتكييف معًا — توفير وراحة في آنٍ واحد.
+
+*ملاحظة: فجوة محتوى مهمة = فرصة لسمارتا — لا يوجد منشور جاهز موثّق يعرض "التوفير السنوي بالريال" كإنفوجرافيك؛ العلامات العالمية تستخدم النِسَب المئوية والمحتوى الخليجي يركّز على التكييف. إنفوجرافيك أصلي بالريال السعودي سيكون مميزًا ومملوكًا لسمارتا. حسابان موثّقان بمعرّف في مسار الرابط + حساب MENA مؤكّد بالاسم (تمكين).*
+
+---
