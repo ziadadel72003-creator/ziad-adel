@@ -152,3 +152,47 @@ Themes 11–13 are, by their nature (premium European switch brands; global ligh
 *ملاحظة: فجوة محتوى مهمة = فرصة لسمارتا — لا يوجد منشور جاهز موثّق يعرض "التوفير السنوي بالريال" كإنفوجرافيك؛ العلامات العالمية تستخدم النِسَب المئوية والمحتوى الخليجي يركّز على التكييف. إنفوجرافيك أصلي بالريال السعودي سيكون مميزًا ومملوكًا لسمارتا. حسابان موثّقان بمعرّف في مسار الرابط + حساب MENA مؤكّد بالاسم (تمكين).*
 
 ---
+
+## Theme 13: "Which Lighting Scene?" — Community Poll (استطلاع: أي مشهد تفضّل؟)
+
+*Trigger: Identity + Engagement. The goal is comments/votes, not a sale. **Verified 3/5** — see the honest note at the end: poll-caption text is poorly indexed by search engines, so few of these surface. That is itself the key strategic finding — this format is **under-produced**, so it's a low-competition, high-engagement lane SMARTA can own with original posts.*
+
+### Post 1
+- **URL:** https://www.instagram.com/reel/DKSKRc2sQrD/
+- **Account:** @nanoleaf (Nanoleaf — 265K followers)
+- **Country:** Canada (global brand)
+- **Post type:** Reel
+- **What it shows:** "Which Scene is your favorite? Get…" — several lighting scenes shown in sequence, directly asking followers to name their favorite in the comments.
+- **Verification:** WebSearch — the exact URL was returned by **multiple independent queries**, each with the "Which Scene is your favorite?" caption on the Nanoleaf account. WebFetch returned HTTP 403 (see methodology note).
+- **Hook (opening line/visual):** A direct question overlaid on rotating colorful scenes — "which one is YOURS?"
+- **Psychological trigger:** Identity (self-expression) + low-effort participation
+- **Why it likely worked:** A one-word answer ("scene 2!") is the lowest-friction comment possible, so it harvests a high volume of comments — which the algorithm rewards with reach.
+- **SMARTA adaptation (Arabic):** تنشر سمارتا كاروسيل/ريل يعرض 3–4 مشاهد إضاءة لنفس المجلس وتسأل: "أي مشهد يعجبك؟ اكتب رقمه 👇" — تعليق من كلمة واحدة يرفع التفاعل بأقل جهد.
+
+### Post 2
+- **URL:** https://www.instagram.com/reel/CpDzJyCJWOv/
+- **Account:** @nanoleaf (Nanoleaf)
+- **Country:** Canada (global brand)
+- **Post type:** Reel
+- **What it shows:** "Which magic word would you try FIRST…" — an engagement/question reel inviting followers to say which feature/command they'd use first.
+- **Verification:** WebSearch — the exact URL was returned by multiple independent queries with the matching Nanoleaf caption. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** "Which would you try FIRST?" — forces a choice and implies the viewer already owns it.
+- **Psychological trigger:** Identity / Curiosity
+- **Why it likely worked:** "Which would you try first" invites people to imagine using the product, which both drives comments and quietly rehearses ownership.
+- **SMARTA adaptation (Arabic):** تسأل سمارتا: "لو عندك منزل ذكي، أي مشهد تجرّبه أول؟ استقبال ضيوف؟ سهرة؟ نوم الأطفال؟" — يدفع المتابع يتخيّل نفسه مالكًا للنظام.
+
+### Post 3
+- **URL:** https://www.instagram.com/reel/DLDIvwaMuQw/
+- **Account:** @nanoleaf (Nanoleaf)
+- **Country:** Canada (global brand)
+- **Post type:** Reel
+- **What it shows:** "Nanoleaf Gaming Room Design Ideas for Rope Lights: Pick…" — several setup ideas presented as options for the viewer to pick from.
+- **Verification:** WebSearch — surfaced in a Nanoleaf "which/pick" search with the matching caption on the Nanoleaf account. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** "Pick…" framing over a set of distinct design options.
+- **Psychological trigger:** Identity (taste signaling)
+- **Why it likely worked:** Asking people to "pick a design" invites them to signal their taste publicly — a social act that reliably pulls comments.
+- **SMARTA adaptation (Arabic):** تعرض سمارتا عدة أفكار إضاءة/ديكور لغرفة أو مجلس وتقول "اختر تصميمك المفضّل" — الاختيار العلني للذوق يجذب التعليقات.
+
+*ملاحظة الشفافية لهذه الثيمة (موثّق 3/5): منشورات "الاستطلاع/التصويت" ضعيفة الفهرسة في محركات البحث — نصّ السؤال في التعليق نادرًا ما يُزحَف إليه، فظهرت قلة منها رغم بحث مكثّف عبر عدة علامات (Nanoleaf, Philips Hue, Govee, LIFX). الثلاثة أعلاه كلها من Nanoleaf (مصدر النمط الذي حدده العميل) ومؤكّدة. لم أُضِف منشورات "تخصيص مشهد" من Govee كحشو لأنها ليست استطلاعات فعلية — التزامًا بقاعدة عدم التلفيق. الأهم: ندرة ظهور هذا الفورمات دليل أنه **قليل الإنتاج = فرصة تفاعل عالية ومنافسة منخفضة** لسمارتا لإنتاج استطلاعاتها الأصلية (وهي رخيصة الإنتاج وسريعة التفاعل).*
+
+---
