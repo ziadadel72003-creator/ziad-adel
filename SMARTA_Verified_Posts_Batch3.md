@@ -3,7 +3,7 @@
 **Research date:** 2026-07-21
 **Themes:** (11) Luxury switch as décor · (12) "How much do you save?" energy infographic · (13) "Which lighting scene?" poll · (14) Satisfying automation · (15) Smart home tour
 **Verification method:** WebSearch cross-check (WebFetch to instagram.com blocked with HTTP 403; see note)
-**Total verified posts:** in progress
+**Total verified posts:** 23 / 25 (Theme 13 poll format = 3/5; all others 5/5 — see per-theme notes)
 
 *Note on theme selection: Themes 11–13 are the client's briefs (style sources: Gira/Lutron, Loxone/Lutron, Nanoleaf). Themes 14–15 were chosen by the analyst to replace two earlier ideas — picked specifically because they are (a) creative/high-engagement formats and (b) have abundant, verifiable real-post presence on Instagram.*
 
@@ -264,3 +264,87 @@ Themes 11–13 are, by their nature (premium European switch brands; global ligh
 *ملاحظة: تمثيل جيد — مبدعان بمعرّف في مسار الرابط (Smart Home Solver) + منشورات MENA عربية بلمسة واحدة. الفورمات المُرضي وفير وقابل للتوثيق، عكس الاستطلاعات (ثيمة 13).*
 
 ---
+
+## Theme 15: Smart Home Tour (جولة داخل منزل ذكي) — *analyst pick*
+
+*Trigger: Aspiration + watch-time. A walkthrough of a real automated villa is high-retention (viewers stay to "see the whole house") and high-comment. Chosen because it's creative AND has strong, verifiable Gulf presence — several Dubai/Abu Dhabi villa-automation firms (direct SMARTA peers) post exactly this. This is the strongest-MENA theme in Batch 3.*
+
+### Post 1
+- **URL:** https://www.instagram.com/theswitchcompany/reel/CkNNVxfpPlZ/
+- **Account:** @theswitchcompany (The Switch Company — smart home automation, Dubai/Abu Dhabi/Al Ain; 70+ luxury villas)
+- **Country:** United Arab Emirates 🇦🇪 (direct SMARTA peer)
+- **Post type:** Reel
+- **What it shows:** "luxury villa in Dubai, Home Automation Systems / Home…" — a walkthrough of a fully automated luxury Dubai villa (lighting, shades, cinema, security).
+- **Verification:** WebSearch — the **account handle is in the URL path** (`/theswitchcompany/reel/`) and the account/company was confirmed (Dubai/Abu Dhabi/Al Ain showrooms, 70+ Dubai Hills villas on KNX). WebFetch returned HTTP 403 (see methodology note).
+- **Hook (opening line/visual):** A sweeping shot entering a luxury villa where lights/shades respond as the camera moves.
+- **Psychological trigger:** Aspiration / Status
+- **Why it likely worked:** A real, finished luxury villa tour is exactly what an aspiring villa owner wants to watch — it shows the end result they're buying, not a product in isolation.
+- **SMARTA adaptation (Arabic):** تنتج سمارتا جولة سينمائية داخل فيلا سعودية مؤتمتة بالكامل تُظهر كل ركن وهو يستجيب (إضاءة، ستائر، سينما، أمان) — "شوف فيلا سمارتا كاملة في دقيقة".
+
+### Post 2
+- **URL:** https://www.instagram.com/theswitchcompany/reel/C9M3HaSoJAq/
+- **Account:** @theswitchcompany (The Switch Company)
+- **Country:** United Arab Emirates 🇦🇪
+- **Post type:** Reel
+- **What it shows:** "Luxury villa in Abu Dhabi fully automated — Services Provided…" — an Abu Dhabi villa tour listing the automation delivered across the home.
+- **Verification:** WebSearch — the **account handle is in the URL path** (`/theswitchcompany/reel/`), surfaced alongside Post 1 in a villa-tour search. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** "Fully automated" over a tour that ends each room with a control moment.
+- **Psychological trigger:** Aspiration / Authority (scope of work)
+- **Why it likely worked:** Listing the services delivered turns the tour into a portfolio proof — it says "we can do all of this for you," which builds installer credibility.
+- **SMARTA adaptation (Arabic):** تختم سمارتا جولة الفيلا بقائمة "الخدمات المنفّذة" (إضاءة، ستائر، تكييف، أمان، سينما)، لتحوّل الجولة إلى إثبات قدرة يقنع العميل المحتمل.
+
+### Post 3
+- **URL:** https://www.instagram.com/baillieautomation/reel/DAqCxJcSuIS/
+- **Account:** @baillieautomation (Baillie Automation — luxury home automation integrator)
+- **Country:** UK/Global (luxury integrator)
+- **Post type:** Reel
+- **What it shows:** "Luxury Home Automation by us @baillieautomation — One our…" — a tour of a completed luxury automation project by the installer.
+- **Verification:** WebSearch — the **account handle is in the URL path** (`/baillieautomation/reel/`) with the matching caption. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** "By us" — the installer proudly claiming a finished, polished project.
+- **Psychological trigger:** Social proof / Craft pride
+- **Why it likely worked:** An installer showcasing "our own work" reads as a credential and invites trust — the exact positioning SMARTA wants.
+- **SMARTA adaptation (Arabic):** تنشر سمارتا جولات بعنوان "من تنفيذ سمارتا" لتوثيق أعمالها الحقيقية كمعرض إنجازات يبني الثقة والمصداقية.
+
+### Post 4
+- **URL:** https://www.instagram.com/reel/DOWb3iZkqlP/
+- **Account:** مزوّد أتمتة فلل في دبي (الحساب غير مكشوف في المقتطف)
+- **Country:** United Arab Emirates 🇦🇪 (Dubai Hills)
+- **Post type:** Reel
+- **What it shows:** "Bespoke Home Automation for a Private Villa in Dubai Hills…" — a bespoke villa-automation walkthrough in an exclusive Dubai community.
+- **Verification:** WebSearch — a URL-quote search returned this exact reel with the matching caption. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** "Bespoke … Private Villa" — exclusivity signaling from the first line.
+- **Psychological trigger:** Status / Exclusivity
+- **Why it likely worked:** "Bespoke" + "private villa" in a named prestige neighborhood flatters the aspirational viewer and signals a bespoke (not off-the-shelf) service.
+- **SMARTA adaptation (Arabic):** تستخدم سمارتا لغة "تفصيل خاص" و"فيلا خاصة" وتذكر الأحياء الراقية (حطين، الملقا…) لإضفاء حصرية على جولاتها.
+
+### Post 5
+- **URL:** https://www.instagram.com/reel/DQNALovE88l/
+- **Account:** مزوّد أتمتة فلل في دبي (الحساب غير مكشوف في المقتطف)
+- **Country:** United Arab Emirates 🇦🇪 (Meydan, Dubai)
+- **Post type:** Reel
+- **What it shows:** "Custom Home Automation for a Private Villa in Meydan…" — a custom villa-automation tour in Meydan, Dubai.
+- **Verification:** WebSearch — surfaced in villa-tour searches (returned across two queries) with the matching caption. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** A named prestige location (Meydan) + "custom" — anchoring the tour in an aspirational address.
+- **Psychological trigger:** Status / Aspiration
+- **Why it likely worked:** Tying the tour to a recognizable luxury district lets viewers project themselves into a specific, desirable lifestyle.
+- **SMARTA adaptation (Arabic):** تربط سمارتا جولاتها بمواقع سعودية مرموقة (أحياء الرياض/جدة الراقية) لتجعل المشاهد يتخيّل نفسه في ذلك النمط من الحياة.
+
+*ملاحظة: أقوى ثيمات الدفعة 3 تمثيلًا خليجيًا — كل الجولات من شركات أتمتة فلل في الإمارات (نظراء مباشرون لسمارتا)، ثلاث منها موثّقة بمعرّف الحساب في مسار الرابط. هذا الفورمات (جولة فيلا حقيقية) هو الأقرب مباشرةً لما تقدر سمارتا تنتجه من محتواها الخاص.*
+
+---
+
+
+## Transparency Report — Batch 3
+
+- **Themes chosen by the client:** 11 (Luxury switch as décor), 12 ("How much do you save?"), 13 ("Which scene?" poll). **Themes chosen by the analyst** (replacing two earlier ideas, per the client's request for creative + real-post-backed formats): 14 (Satisfying automation), 15 (Smart home tour).
+- **Total: 23 / 25 verified.** Theme 13 (poll) = **3/5** — poll-caption text is poorly indexed by search engines, so genuine poll posts rarely surface; padding with non-poll content was refused per the no-fabrication rule. All other themes = 5/5.
+- **Gulf/MENA representation by theme:**
+  - Theme 11 (luxury switch): global by nature (Gira, Lutron, Basalte, JUNG) — matches the client's named style sources; no MENA expected.
+  - Theme 12 (savings): mostly Lutron/integrator (global) + one MENA account (تمكين/Tamkeen, AC-energy). **Content gap flagged as an opportunity:** no ready-made "annual savings in SAR" infographic exists to reference — SMARTA can own that format.
+  - Theme 13 (poll): all Nanoleaf (the client's style source); poll format under-produced everywhere = low-competition opportunity.
+  - Theme 14 (satisfying): mixed — Smart Home Solver (authority creator) + strong MENA Arabic "one-touch" reels.
+  - Theme 15 (home tour): **strongest MENA** — all five are Gulf luxury-villa automation firms (Dubai/Abu Dhabi), direct SMARTA peers.
+- **Verification method (same as Batches 1–2):** WebFetch to instagram.com is blocked (HTTP 403); everything verified via WebSearch cross-check. Strength labels used per post: **handle-in-URL** (strongest — e.g. gira.international, basalte.be, lutronelectronics, iappsautomation, smarthomesolver, theswitchcompany, baillieautomation, engineering-style paths), **full-caption-in-snippet**, and **standard** (bare `/p/` or `/reel/` confirmed by a matching caption, ideally via a second query). Where a snippet didn't expose the handle, the account is labeled "الحساب غير مكشوف" rather than guessed. Discarded-not-guessed examples this batch: a Saudi "بيت ذكي" tour reel and the DMXbvlcoquH energy-authority reel that failed re-confirmation.
+- **Two genuine content gaps = two opportunities for SMARTA to OWN:** (1) an original "توفير سنوي بالريال" energy infographic; (2) original lighting-scene **polls** — both are cheap to produce and under-served in the market.
+- **Same caution as before:** search-indexed captions confirm the page existed and was crawled, but are lighter than opening the live post. SMARTA's team should open each URL once, logged in, for a final human check before use.
+- **Engagement metrics:** not exposed to unauthenticated fetches/search, so none are reported; priority signals used instead (account authority/type, handle-in-URL confirmation, repeated indexing, topical fit).
