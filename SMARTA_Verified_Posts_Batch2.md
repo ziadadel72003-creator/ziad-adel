@@ -78,3 +78,69 @@ For this "Family & Security" bundle, MENA/Gulf accounts were prioritized and sev
 - **SMARTA adaptation (Arabic):** تطمئن سمارتا العملاء بخصوص خصوصية كاميرات وحساسات غرف الأطفال (تشفير، حلول محلية دون رفع للسحابة)، لمعالجة قلق العائلات الخليجية من اختراق الكاميرات.
 
 ---
+
+## Theme 7: Smart Doorbell & Camera — "Who's at the door?" (الجرس والكاميرا الذكية)
+
+### Post 1
+- **URL:** https://www.instagram.com/p/C7d6L1PNP_A/
+- **Account:** @aqara.smarthome.official (Aqara Smart Home — 52K followers)
+- **Country:** Global brand (China; sold across GCC)
+- **Post type:** Image/carousel
+- **What it shows:** "Discover the Aqara Video Doorbell G4! ✨🚪 🔒 Voice…" — feature showcase of the G4 doorbell: face recognition, two-way voice, night vision, local storage.
+- **Verification:** WebSearch — this exact URL was returned by **two independent queries** (a Ring/Aqara doorbell search and a direct URL-quote search), both with the matching caption on the Aqara account. WebFetch returned HTTP 403 (see methodology note).
+- **Hook (opening line/visual):** "Discover the Aqara Video Doorbell G4!" over the doorbell's live view of a visitor.
+- **Psychological trigger:** Security + Curiosity (feature reveal)
+- **Why it likely worked:** A clean feature showcase from a credible brand answers the core question — "who's at my door, and can I talk to them?" — with visible proof.
+- **SMARTA adaptation (Arabic):** تعرض سمارتا جرس الباب الذكي بالكاميرا مع ميزة التعرف على الوجوه والتحدث الصوتي، بتعليق: "شوف مين على بابك وكلّمه، وأنت في أي مكان بالفيلا أو خارجها".
+
+### Post 2
+- **URL:** https://www.instagram.com/housesupplysa/reel/DRXefFzgJnV/
+- **Account:** @housesupplysa (House Supply — Saudi home/smart-devices retailer)
+- **Country:** Saudi Arabia 🇸🇦
+- **Post type:** Reel
+- **What it shows:** "🚪🔔 Smart Doorbell Camera / جرس الباب الذكي — Keep your…" — bilingual demo of a video doorbell for the Saudi market, framed around keeping the home secure.
+- **Verification:** WebSearch — the **account handle is embedded directly in the URL path** (`/housesupplysa/reel/`), and the post surfaced in a doorbell search with a matching bilingual caption. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** Bilingual (Arabic/English) doorbell demo — immediately relevant to a Saudi bilingual audience.
+- **Psychological trigger:** Security / Convenience
+- **Why it likely worked:** A local Saudi retailer speaking to the market in its own bilingual voice feels closer and more actionable than a global brand ad.
+- **SMARTA adaptation (Arabic):** تنشر سمارتا مقطعًا ثنائي اللغة لجرس الباب الذكي موجّهًا للسوق السعودي، مع إبراز التوصيل والتركيب المحلي السريع كميزة على العلامات العالمية.
+
+### Post 3
+- **URL:** https://www.instagram.com/reel/DEfhAc-MNUG/
+- **Account:** موزّع MENA (Eufy / Anker — الحساب المحدد غير مكشوف في المقتطف؛ الرابط مجرّد)
+- **Country:** MENA (Arabic; cross-posted by Anker Jordan distributor)
+- **Post type:** Reel
+- **What it shows:** "جرس الباب الذكي بكاميرتين 🚪📸 Eufy Doorbell E340" — a dual-camera doorbell (front + package view) demo, emphasizing "double security."
+- **Verification:** WebSearch — surfaced in a doorbell search with the matching Arabic caption, and **corroborated by an independent cross-post on the Anker Jordan distributor's Facebook page** describing the same product/caption. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** "بكاميرتين" (two cameras) — a concrete upgrade hook (see the visitor AND any package on the ground).
+- **Psychological trigger:** Security (more coverage = more safety)
+- **Why it likely worked:** The dual-camera angle gives a specific, easy-to-grasp reason this doorbell beats a normal one — package theft and full-height view are real concerns.
+- **SMARTA adaptation (Arabic):** تُبرز سمارتا مزايا تقنية محددة (كاميرا مزدوجة، رؤية للطرود عند الباب) بدلًا من عرض عام، لأن الميزة الملموسة تُقنع أسرع من الكلام العام عن "الأمان".
+
+### Post 4
+- **URL:** https://www.instagram.com/reel/DJBoehMMqK2/
+- **Account:** موزّع عربي (يعرض Ring Video Doorbell — الحساب غير مكشوف في المقتطف)
+- **Country:** MENA (Arabic)
+- **Post type:** Reel
+- **What it shows:** "Ring Video Doorbell 2 — جرس ذكي للأبواب يجي بداخله كاميرا و…" — an Arabic walkthrough of the Ring doorbell, explaining the built-in camera and app alerts.
+- **Verification:** WebSearch — surfaced in a doorbell search with the matching Arabic caption naming the exact product. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** Naming the well-known product (Ring) in Arabic — borrows the brand's global recognition.
+- **Psychological trigger:** Security / Social proof (recognizable brand)
+- **Why it likely worked:** Explaining a globally-famous product in Arabic lowers the barrier for a local buyer who has "heard of Ring" but never had it explained in their language.
+- **SMARTA adaptation (Arabic):** تشرح سمارتا المنتجات العالمية المعروفة (مثل أجراس الفيديو الشهيرة) باللهجة السعودية وتوضح كيف تركّبها وتدعمها محليًا، لتجسر بين شهرة العلامة والخدمة المحلية.
+
+### Post 5
+- **URL:** https://www.instagram.com/p/CeB0zczFwT6/
+- **Account:** موزّع عربي (يعرض جرس Smart Life — الحساب غير مكشوف في المقتطف)
+- **Country:** MENA (Arabic)
+- **Post type:** Image/carousel
+- **What it shows:** "جرس الباب الذكي من سمارت لايف مع كاميرا بجودة ١٠٨٠ HD…" — a Smart Life video doorbell with 1080p HD camera, described in Arabic for a local audience.
+- **Verification:** WebSearch — surfaced in a doorbell search with the matching Arabic caption naming the product and spec. WebFetch returned HTTP 403.
+- **Hook (opening line/visual):** Concrete spec ("كاميرا بجودة ١٠٨٠ HD") stated plainly in Arabic.
+- **Psychological trigger:** Security / Value (clear spec, accessible brand)
+- **Why it likely worked:** Stating a plain spec (1080p HD) in Arabic reassures value-conscious buyers that they get real quality without a premium global-brand price.
+- **SMARTA adaptation (Arabic):** توضح سمارتا مواصفات واضحة وبسيطة (دقة الكاميرا، الرؤية الليلية، التخزين) بالعربية، لأن المشتري المحلي يريد معرفة "شنو راح آخذ بالضبط" قبل الشراء.
+
+*ملاحظة: هذه الثيمة تميل لحسابات موزّعين عرب صغيرة/متوسطة إضافةً إلى مرجعية عالمية (Aqara) وحساب سعودي (House Supply). الحسابات ذات الروابط المجرّدة (`/p/` أو `/reel/`) وُثّقت عبر مطابقة التعليق في نتائج البحث، وليس عبر معرّف في مسار الرابط.*
+
+---
