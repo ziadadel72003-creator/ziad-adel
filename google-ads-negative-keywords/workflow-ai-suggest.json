@@ -1,0 +1,464 @@
+{
+  "name": "Google Ads - Auto Negative Keywords + AI (Suggest-only)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "daysInterval": 3,
+              "triggerAtHour": 6
+            }
+          ]
+        }
+      },
+      "id": "n_sched",
+      "name": "كل 3 أيام (Schedule)",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -1120,
+        208
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "c1",
+              "name": "customerId",
+              "value": "1234567890",
+              "type": "string"
+            },
+            {
+              "id": "c2",
+              "name": "loginCustomerId",
+              "value": "1234567890",
+              "type": "string"
+            },
+            {
+              "id": "c3",
+              "name": "developerToken",
+              "value": "YOUR_DEVELOPER_TOKEN",
+              "type": "string"
+            },
+            {
+              "id": "c4",
+              "name": "matchMode",
+              "value": "contains",
+              "type": "string"
+            },
+            {
+              "id": "c5",
+              "name": "negateMode",
+              "value": "searchTerm",
+              "type": "string"
+            },
+            {
+              "id": "c6",
+              "name": "negativeMatchType",
+              "value": "EXACT",
+              "type": "string"
+            },
+            {
+              "id": "c7",
+              "name": "minClicks",
+              "value": 0,
+              "type": "number"
+            },
+            {
+              "id": "c8",
+              "name": "dateRange",
+              "value": "LAST_14_DAYS",
+              "type": "string"
+            },
+            {
+              "id": "c9",
+              "name": "businessContext",
+              "value": "شركة سمارتا: متخصصة في أنظمة المنزل الذكي (Smart Home) وحلول التيار الخفيف والأتمتة وإنترنت الأشياء (IoT) للمباني السكنية والتجارية داخل السعودية. تبيع للأفراد والشركات ومكاتب التصميم الداخلي. التركيز الإعلاني على الشركات والمشاريع والباحثين بنيّة جادّة عن شركة/مزوّد في المجال أو عن اسم المجال مثل (سمارت هوم / منزل ذكي / تيار خفيف / أتمتة مباني).",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "n_cfg",
+      "name": "الإعدادات (Config)",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -896,
+        208
+      ]
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "mode": "list",
+          "value": "1d7x5K1UWPLRitcCxOb6FmXUkQ0rmrLycLi_P_DE5NjY",
+          "cachedResultName": "Negative keyword report ",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1d7x5K1UWPLRitcCxOb6FmXUkQ0rmrLycLi_P_DE5NjY/edit"
+        },
+        "sheetName": {
+          "__rl": true,
+          "mode": "name",
+          "value": "Keywords"
+        },
+        "options": {}
+      },
+      "id": "n_read",
+      "name": "قراءة قائمة الكلمات (Google Sheet)",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        -672,
+        208
+      ],
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "bHKb1TrNefRyX11p",
+          "name": "Google Sheets OAuth2 API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "aggregate": "aggregateAllItemData",
+        "options": {}
+      },
+      "id": "n_agg",
+      "name": "تجميع الكلمات",
+      "type": "n8n-nodes-base.aggregate",
+      "typeVersion": 1,
+      "position": [
+        -448,
+        208
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://googleads.googleapis.com/v18/customers/{{ $('الإعدادات (Config)').item.json.customerId }}/googleAds:searchStream",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "googleAdsOAuth2Api",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "developer-token",
+              "value": "={{ $('الإعدادات (Config)').item.json.developerToken }}"
+            },
+            {
+              "name": "login-customer-id",
+              "value": "={{ $('الإعدادات (Config)').item.json.loginCustomerId }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"query\": \"SELECT search_term_view.search_term, campaign.id, campaign.name, ad_group.id, metrics.clicks, metrics.cost_micros FROM search_term_view WHERE segments.date DURING {{ $('الإعدادات (Config)').item.json.dateRange }} AND metrics.clicks >= {{ $('الإعدادات (Config)').item.json.minClicks }}\"\n}",
+        "options": {}
+      },
+      "id": "n_search",
+      "name": "جلب Search Terms",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -224,
+        208
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// ===== تحضير المرشحين: تطبيق القواعد + تجهيز طلب ChatGPT =====\nconst cfg = $('الإعدادات (Config)').first().json;\nconst matchMode = (cfg.matchMode || 'contains').toLowerCase();\n\n// 1) الكلمات الممنوعة من الشيت\nconst kwAgg = $('تجميع الكلمات').first().json.data || [];\nconst banned = [];\nfor (const row of kwAgg) {\n  const v = Object.values(row).find(x => x != null && String(x).trim() !== '');\n  if (v) banned.push(String(v).trim().toLowerCase());\n}\nconst uniqueBanned = [...new Set(banned)].filter(Boolean);\n\n// 2) نتائج searchStream\nconst raw = $input.all().map(i => i.json);\nconst results = [];\nfor (const b of raw) {\n  if (Array.isArray(b?.results)) results.push(...b.results);\n  else if (Array.isArray(b)) { for (const x of b) if (Array.isArray(x?.results)) results.push(...x.results); }\n}\n\nconst norm = s => String(s || '').trim().toLowerCase();\nconst isMatch = (t, w) => matchMode === 'exact' ? t === w : t.includes(w);\n\nconst ruleDecisions = [];\nconst candidates = [];\nconst seen = new Set();\nfor (const r of results) {\n  const term = norm(r?.searchTermView?.searchTerm);\n  if (!term) continue;\n  const campaignId = r?.campaign?.id;\n  if (!campaignId) continue;\n  const campaignName = r?.campaign?.name || '';\n  const clicks = Number(r?.metrics?.clicks || 0);\n  const cost = Number(r?.metrics?.costMicros || 0) / 1e6;\n  const key = campaignId + '::' + term;\n  if (seen.has(key)) continue;\n  seen.add(key);\n  const hit = uniqueBanned.find(w => isMatch(term, w));\n  const base = { searchTerm: term, campaignId: String(campaignId), campaignName, clicks, cost };\n  if (hit) ruleDecisions.push({ ...base, matchedWord: hit });\n  else candidates.push(base);\n}\n\n// 3) تجهيز طلب ChatGPT (لغير المطابقين فقط)\nconst systemPrompt =\n`أنت مصنّف احترافي لكلمات البحث (Search Terms) في حملات Google Ads.\nمهمتك: لكل عبارة بحث قرّر هل نستبعدها (غير مناسبة للنشاط) أم نُبقيها.\n\nنشاط الشركة:\n${cfg.businessContext || ''}\n\nأبقِ العبارة (exclude=false) إذا:\n- بحث عن شركة/مزوّد في نفس المجال، أو نيّة مشاريع/شركات/مقاولات/تصميم داخلي/عقارات\n- بحث بالمجال أو اسم الخدمة (سمارت هوم، منزل ذكي، تيار خفيف، أتمتة مباني، أنظمة أمن ومراقبة)\n- ضمن السعودية\n\nاستبعد العبارة (exclude=true) إذا:\n- وظائف/توظيف/رواتب/تدريب\n- مجاني/شرح/كورس/DIY/طريقة عمل بنفسك\n- منتج مفرد رخيص بدون نيّة مشروع أو منتجات لا تبيعها الشركة\n- بحث معلومات/طلاب/تعريفات\n- دولة خارج السعودية\n\nكن متحفظاً: إن لم تكن متأكداً اجعل exclude=false مع confidence منخفض.`;\n\nconst userPrompt =\n'صنّف العبارات التالية وأعد النتيجة بصيغة JSON فقط بالشكل: ' +\n'{\"results\":[{\"searchTerm\":\"العبارة كما هي\",\"exclude\":true او false,\"reason\":\"سبب مختصر بالعربية\",\"confidence\":رقم من 0 الى 100}]}.\\n\\n' +\n'العبارات:\\n' + JSON.stringify(candidates.map(c => c.searchTerm));\n\nconst openaiBody = {\n  model: 'gpt-4o-mini',\n  temperature: 0,\n  response_format: { type: 'json_object' },\n  messages: [\n    { role: 'system', content: systemPrompt },\n    { role: 'user', content: userPrompt }\n  ]\n};\n\nreturn [{ json: {\n  businessContext: cfg.businessContext || '',\n  candidates,\n  ruleDecisions,\n  candidatesCount: candidates.length,\n  ruleMatchedCount: ruleDecisions.length,\n  negateMode: (cfg.negateMode || 'searchTerm'),\n  negativeMatchType: (cfg.negativeMatchType || 'EXACT'),\n  openaiBody\n} }];\n"
+      },
+      "id": "n_prep",
+      "name": "تحضير المرشحين",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        0,
+        208
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.openai.com/v1/chat/completions",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "openAiApi",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($json.openaiBody) }}",
+        "options": {}
+      },
+      "id": "n_ai",
+      "name": "ChatGPT تصنيف",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        224,
+        208
+      ],
+      "credentials": {
+        "openAiApi": {
+          "id": "GXC3Apt3fotoprI1",
+          "name": "OpenAI account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// ===== دمج قرارات القواعد + ChatGPT وبناء صفوف المراجعة =====\nconst prep = $('تحضير المرشحين').first().json;\nconst now = new Date().toISOString();\n\n// قراءة رد ChatGPT\nlet ai = [];\ntry {\n  const content = $input.first().json?.choices?.[0]?.message?.content || '{}';\n  const parsed = typeof content === 'string' ? JSON.parse(content) : content;\n  ai = Array.isArray(parsed) ? parsed : (parsed.results || []);\n} catch (e) { ai = []; }\n\n// خريطة الميتريكس للمرشحين\nconst cmap = {};\nfor (const c of prep.candidates) cmap[c.searchTerm] = c;\n\nconst rows = [];\n\n// صفوف القواعد (استبعاد مؤكد)\nfor (const r of prep.ruleDecisions) {\n  rows.push({\n    searchTerm: r.searchTerm,\n    decision: 'exclude',\n    source: 'rule',\n    matchedWord: r.matchedWord,\n    reason: 'مطابقة قاعدة: ' + r.matchedWord,\n    confidence: 100,\n    suggestedNegative: prep.negateMode === 'keyword' ? r.matchedWord : r.searchTerm,\n    matchType: prep.negativeMatchType,\n    campaignId: r.campaignId,\n    campaignName: r.campaignName,\n    clicks: r.clicks,\n    cost: r.cost,\n    date: now\n  });\n}\n\n// صفوف ChatGPT (المستبعَد فقط)\nfor (const a of ai) {\n  if (!a || a.exclude !== true) continue;\n  const term = String(a.searchTerm || '').trim().toLowerCase();\n  const m = cmap[term] || {};\n  rows.push({\n    searchTerm: term,\n    decision: 'exclude',\n    source: 'ai',\n    matchedWord: '',\n    reason: a.reason || '',\n    confidence: Number(a.confidence || 0),\n    suggestedNegative: term,\n    matchType: prep.negativeMatchType,\n    campaignId: m.campaignId || '',\n    campaignName: m.campaignName || '',\n    clicks: m.clicks || 0,\n    cost: m.cost || 0,\n    date: now\n  });\n}\n\nif (rows.length === 0) {\n  return [{ json: { searchTerm: '', decision: 'no-suggestions', source: '', matchedWord: '', reason: 'لا توجد اقتراحات في هذه الجولة', confidence: 0, suggestedNegative: '', matchType: '', campaignId: '', campaignName: '', clicks: 0, cost: 0, date: now } }];\n}\nreturn rows.map(r => ({ json: r }));\n"
+      },
+      "id": "n_merge",
+      "name": "دمج القرارات",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        448,
+        208
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "mode": "list",
+          "value": "1d7x5K1UWPLRitcCxOb6FmXUkQ0rmrLycLi_P_DE5NjY",
+          "cachedResultName": "Negative keyword report ",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1d7x5K1UWPLRitcCxOb6FmXUkQ0rmrLycLi_P_DE5NjY/edit"
+        },
+        "sheetName": {
+          "__rl": true,
+          "mode": "name",
+          "value": "Review"
+        },
+        "columns": {
+          "mappingMode": "autoMapInputData",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "searchTerm",
+              "displayName": "searchTerm",
+              "required": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "decision",
+              "displayName": "decision",
+              "required": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "source",
+              "displayName": "source",
+              "required": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "matchedWord",
+              "displayName": "matchedWord",
+              "required": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "reason",
+              "displayName": "reason",
+              "required": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "confidence",
+              "displayName": "confidence",
+              "required": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "suggestedNegative",
+              "displayName": "suggestedNegative",
+              "required": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "matchType",
+              "displayName": "matchType",
+              "required": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "campaignId",
+              "displayName": "campaignId",
+              "required": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "campaignName",
+              "displayName": "campaignName",
+              "required": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "clicks",
+              "displayName": "clicks",
+              "required": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "cost",
+              "displayName": "cost",
+              "required": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "date",
+              "displayName": "date",
+              "required": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "n_review",
+      "name": "اقتراحات للمراجعة (Review)",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        672,
+        208
+      ],
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "bHKb1TrNefRyX11p",
+          "name": "Google Sheets OAuth2 API"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "كل 3 أيام (Schedule)": {
+      "main": [
+        [
+          {
+            "node": "الإعدادات (Config)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "الإعدادات (Config)": {
+      "main": [
+        [
+          {
+            "node": "قراءة قائمة الكلمات (Google Sheet)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "قراءة قائمة الكلمات (Google Sheet)": {
+      "main": [
+        [
+          {
+            "node": "تجميع الكلمات",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "تجميع الكلمات": {
+      "main": [
+        [
+          {
+            "node": "جلب Search Terms",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "جلب Search Terms": {
+      "main": [
+        [
+          {
+            "node": "تحضير المرشحين",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "تحضير المرشحين": {
+      "main": [
+        [
+          {
+            "node": "ChatGPT تصنيف",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ChatGPT تصنيف": {
+      "main": [
+        [
+          {
+            "node": "دمج القرارات",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "دمج القرارات": {
+      "main": [
+        [
+          {
+            "node": "اقتراحات للمراجعة (Review)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {}
+}
