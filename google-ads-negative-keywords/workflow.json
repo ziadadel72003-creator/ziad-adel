@@ -1,0 +1,425 @@
+{
+  "name": "Google Ads - Auto Negative Keywords (كل 3 أيام)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "daysInterval": 3,
+              "triggerAtHour": 6
+            }
+          ]
+        }
+      },
+      "id": "schedule-trigger",
+      "name": "كل 3 أيام (Schedule)",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -320,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "cfg-customer-id",
+              "name": "customerId",
+              "value": "1234567890",
+              "type": "string"
+            },
+            {
+              "id": "cfg-login-customer-id",
+              "name": "loginCustomerId",
+              "value": "1234567890",
+              "type": "string"
+            },
+            {
+              "id": "cfg-dev-token",
+              "name": "developerToken",
+              "value": "YOUR_DEVELOPER_TOKEN",
+              "type": "string"
+            },
+            {
+              "id": "cfg-match-mode",
+              "name": "matchMode",
+              "value": "contains",
+              "type": "string"
+            },
+            {
+              "id": "cfg-neg-mode",
+              "name": "negateMode",
+              "value": "searchTerm",
+              "type": "string"
+            },
+            {
+              "id": "cfg-neg-match-type",
+              "name": "negativeMatchType",
+              "value": "EXACT",
+              "type": "string"
+            },
+            {
+              "id": "cfg-min-clicks",
+              "name": "minClicks",
+              "value": 0,
+              "type": "number"
+            },
+            {
+              "id": "cfg-date-range",
+              "name": "dateRange",
+              "value": "LAST_14_DAYS",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "config-node",
+      "name": "الإعدادات (Config)",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -100,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "YOUR_GOOGLE_SHEET_ID",
+          "mode": "id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Keywords"
+        },
+        "options": {}
+      },
+      "id": "read-keywords",
+      "name": "قراءة قائمة الكلمات (Google Sheet)",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        120,
+        300
+      ],
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "REPLACE_GSHEET_CRED_ID",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "aggregate": "aggregateAllItemData",
+        "options": {}
+      },
+      "id": "aggregate-keywords",
+      "name": "تجميع الكلمات",
+      "type": "n8n-nodes-base.aggregate",
+      "typeVersion": 1,
+      "position": [
+        340,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://googleads.googleapis.com/v18/customers/{{ $('الإعدادات (Config)').item.json.customerId }}/googleAds:searchStream",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "googleOAuth2Api",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "developer-token",
+              "value": "={{ $('الإعدادات (Config)').item.json.developerToken }}"
+            },
+            {
+              "name": "login-customer-id",
+              "value": "={{ $('الإعدادات (Config)').item.json.loginCustomerId }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"query\": \"SELECT search_term_view.search_term, campaign.id, campaign.name, ad_group.id, metrics.clicks, metrics.cost_micros FROM search_term_view WHERE segments.date DURING {{ $('الإعدادات (Config)').item.json.dateRange }} AND metrics.clicks >= {{ $('الإعدادات (Config)').item.json.minClicks }}\"\n}",
+        "options": {}
+      },
+      "id": "get-search-terms",
+      "name": "جلب Search Terms",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        560,
+        300
+      ],
+      "credentials": {
+        "googleOAuth2Api": {
+          "id": "REPLACE_GADS_OAUTH_CRED_ID",
+          "name": "Google Ads OAuth2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// ===== مطابقة السيرش تيرم مع قاعدة الكلمات وبناء عمليات الاستبعاد =====\nconst cfg = $('الإعدادات (Config)').first().json;\nconst customerId = String(cfg.customerId);\nconst matchMode = (cfg.matchMode || 'contains').toLowerCase();      // contains | exact\nconst negateMode = (cfg.negateMode || 'searchTerm').toLowerCase();  // searchTerm | keyword\nconst negMatchType = (cfg.negativeMatchType || 'EXACT').toUpperCase();\n\n// --- 1) قائمة الكلمات الممنوعة من الشيت ---\nconst kwAgg = $('تجميع الكلمات').first().json.data || [];\nconst bannedWords = [];\nfor (const row of kwAgg) {\n  // ياخد أول عمود مهما كان اسمه (keyword / كلمة / word ...)\n  const firstVal = Object.values(row).find(v => v !== null && String(v).trim() !== '');\n  if (firstVal) bannedWords.push(String(firstVal).trim().toLowerCase());\n}\nconst uniqueBanned = [...new Set(bannedWords)].filter(Boolean);\n\n// --- 2) نتائج searchStream (بترجع Array من الـ batches) ---\nconst raw = $input.all().map(i => i.json);\nconst results = [];\nfor (const batch of raw) {\n  if (Array.isArray(batch?.results)) results.push(...batch.results);\n  else if (Array.isArray(batch)) {\n    for (const b of batch) if (Array.isArray(b?.results)) results.push(...b.results);\n  }\n}\n\n// --- 3) المطابقة ---\nconst norm = (s) => String(s || '').trim().toLowerCase();\nconst isMatch = (term, word) =>\n  matchMode === 'exact' ? term === word : term.includes(word);\n\nconst seen = new Set();      // منع التكرار\nconst operations = [];\nconst report = [];\n\nfor (const r of results) {\n  const term = norm(r?.searchTermView?.searchTerm);\n  if (!term) continue;\n  const campaignId = r?.campaign?.id;\n  const campaignName = r?.campaign?.name || '';\n  if (!campaignId) continue;\n\n  const hit = uniqueBanned.find(w => isMatch(term, w));\n  if (!hit) continue;\n\n  // النص اللي هيتضاف كـ negative\n  const negText = negateMode === 'keyword' ? hit : term;\n  const dedupeKey = `${campaignId}::${negText}`;\n  if (seen.has(dedupeKey)) continue;\n  seen.add(dedupeKey);\n\n  operations.push({\n    create: {\n      campaign: `customers/${customerId}/campaigns/${campaignId}`,\n      negative: true,\n      keyword: { text: negText, matchType: negMatchType }\n    }\n  });\n\n  report.push({\n    searchTerm: term,\n    matchedWord: hit,\n    negativeAdded: negText,\n    matchType: negMatchType,\n    campaignId: String(campaignId),\n    campaignName,\n    clicks: Number(r?.metrics?.clicks || 0),\n    cost: Number(r?.metrics?.costMicros || 0) / 1e6,\n    date: new Date().toISOString()\n  });\n}\n\nreturn [{\n  json: {\n    customerId,\n    bannedWordsCount: uniqueBanned.length,\n    searchTermsScanned: results.length,\n    matchesFound: operations.length,\n    operations,\n    report\n  }\n}];\n"
+      },
+      "id": "match-build",
+      "name": "المطابقة وبناء العمليات",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        780,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "has-matches",
+              "leftValue": "={{ $json.matchesFound }}",
+              "rightValue": 0,
+              "operator": {
+                "type": "number",
+                "operation": "gt"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "if-has-matches",
+      "name": "فيه كلمات للاستبعاد؟",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        1000,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://googleads.googleapis.com/v18/customers/{{ $('الإعدادات (Config)').item.json.customerId }}/campaignCriteria:mutate",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "googleOAuth2Api",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "developer-token",
+              "value": "={{ $('الإعدادات (Config)').item.json.developerToken }}"
+            },
+            {
+              "name": "login-customer-id",
+              "value": "={{ $('الإعدادات (Config)').item.json.loginCustomerId }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"partialFailure\": true,\n  \"operations\": {{ JSON.stringify($json.operations) }}\n}",
+        "options": {}
+      },
+      "id": "add-negatives",
+      "name": "إضافة Negative Keywords",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1240,
+        200
+      ],
+      "credentials": {
+        "googleOAuth2Api": {
+          "id": "REPLACE_GADS_OAUTH_CRED_ID",
+          "name": "Google Ads OAuth2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "YOUR_GOOGLE_SHEET_ID",
+          "mode": "id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "Log",
+          "mode": "list",
+          "cachedResultName": "Log"
+        },
+        "columns": {
+          "mappingMode": "autoMapInputData",
+          "value": {},
+          "matchingColumns": []
+        },
+        "options": {}
+      },
+      "id": "log-sheet",
+      "name": "تسجيل النتائج (Log)",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        1460,
+        380
+      ],
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "REPLACE_GSHEET_CRED_ID",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "report",
+        "options": {}
+      },
+      "id": "split-report",
+      "name": "تفكيك التقرير",
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        1240,
+        380
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "noop-nomatch",
+      "name": "مفيش كلمات جديدة",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        1240,
+        520
+      ]
+    }
+  ],
+  "connections": {
+    "كل 3 أيام (Schedule)": {
+      "main": [
+        [
+          {
+            "node": "الإعدادات (Config)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "الإعدادات (Config)": {
+      "main": [
+        [
+          {
+            "node": "قراءة قائمة الكلمات (Google Sheet)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "قراءة قائمة الكلمات (Google Sheet)": {
+      "main": [
+        [
+          {
+            "node": "تجميع الكلمات",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "تجميع الكلمات": {
+      "main": [
+        [
+          {
+            "node": "جلب Search Terms",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "جلب Search Terms": {
+      "main": [
+        [
+          {
+            "node": "المطابقة وبناء العمليات",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "المطابقة وبناء العمليات": {
+      "main": [
+        [
+          {
+            "node": "فيه كلمات للاستبعاد؟",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "فيه كلمات للاستبعاد؟": {
+      "main": [
+        [
+          {
+            "node": "إضافة Negative Keywords",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "تفكيك التقرير",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "مفيش كلمات جديدة",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "تفكيك التقرير": {
+      "main": [
+        [
+          {
+            "node": "تسجيل النتائج (Log)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {}
+}
